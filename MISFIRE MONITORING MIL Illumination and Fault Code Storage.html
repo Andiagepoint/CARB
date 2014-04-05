@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta name="author" content="AndiPower">
+<meta name="editor" content="html-editor phase 5">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+(3.4.1) Misfire causing catalyst damage. Upon detection of the level of misfire specified
+in section (e)(3.2.1) above, the following criteria shall apply for MIL illumination
+and fault code storage:
+(A)  Pending fault codes
+(i)  A pending fault code shall be stored immediately if, during a single driving
+cycle, the specified misfire level is exceeded three times when operating
+26
+in the positive torque region encountered during an FTP cycle or is
+exceeded on a single occasion when operating at any other engine
+speed and load condition in the positive torque region defined in section
+(e)(3.3.1).
+(ii)  Immediately after a pending fault code is stored as specified in section
+(e)(3.4.1)(A)(i) above, the MIL shall blink once per second at all times
+while misfire is occurring during the driving cycle.
+a.  The MIL may be extinguished during those times when misfire is not
+occurring during the driving cycle.
+b. If, at the time a misfire malfunction occurs, the MIL is already
+illuminated for a malfunction other than misfire, the MIL shall blink as
+previously specified in section (e)(3.4.1)(A)(ii) while misfire is
+occurring. If misfiring ceases, the MIL shall stop blinking but remain
+illuminated as required by the other malfunction.
+(B)  Confirmed fault codes
+(i)  If a pending fault code for exceeding the misfire level set forth in section
+(e)(3.2.1) is stored, the OBDII system shall immediately store a
+confirmed fault code if the percentage of misfire specified in section
+(e)(3.2.1) is again exceeded one or more times during either: (a) the
+driving cycle immediately following the storage of the pending fault code,
+regardless of the conditions encountered during the driving cycle; or (b)
+on the next driving cycle in which similar conditions (see section (c)) to
+the engine conditions that occurred when the pending fault code was
+stored are encountered.
+(ii)  If a pending fault code for exceeding the misfire level set forth in section
+(e)(3.2.2) is stored from a previous drive cycle, the OBDII system shall
+immediately store a confirmed fault code if the percentage of misfire
+specified in section (e)(3.2.1) is exceeded one or more times regardless
+of the conditions encountered.
+(iii)  Upon storage of a confirmed fault code, the MIL shall blink as specified
+in subparagraph (e)(3.4.1)(A)(ii) above as long as misfire is occurring
+and the MIL shall remain continuously illuminated if the misfiring ceases.
+(C)  Erasure of pending fault codes
+Pending fault codes shall be erased at the end of the next driving cycle in
+which similar conditions to the engine conditions that occurred when the
+pending fault code was stored have been encountered without any
+exceedance of the specified misfire levels. The pending code may also be
+erased if similar driving conditions are not encountered during the next 80
+driving cycles subsequent to the initial detection of a malfunction.
+(D)   Exemptions for vehicles with fuel shutoff and default fuel control.
+Notwithstanding sections (e)(3.4.1)(A) and (B) above, in vehicles that provide
+for fuel shutoff and default fuel control to prevent over fueling during catalyst
+damage misfire conditions, the MIL need not blink. Instead, the MIL may
+illuminate  continuously in accordance with the requirements for continuous
+MIL illumination in sections (e)(3.4.1)(B)(iii) above upon detection of misfire,
+provided that the fuel shutoff and default control are activated as soon as
+27
+misfire is detected. Fuel shutoff and default fuel control may be deactivated
+only to permit fueling outside of the misfire range. Manufacturers may also
+periodically, but not more than once every 30 seconds, deactivate fuel shutoff
+and default fuel control to determine if the specified catalyst damage misfire
+level is still being exceeded. Normal fueling and fuel control may be resumed
+if the specified catalyst damage misfire level is no longer being exceeded.
+(E)   Manufacturers may request Executive Officer approval of strategies that
+continuously illuminate the MIL in lieu of blinking the MIL during extreme
+catalyst damage misfire conditions (i.e., catalyst damage misfire occurring at
+all engine speeds and loads).  Executive Officer approval shall be granted
+upon determining that the manufacturer employs the strategy only when
+catalyst damage misfire levels cannot be avoided during reasonable driving
+conditions and the manufacturer has demonstrated that the strategy will
+encourage operation of the vehicle in conditions that will minimize catalyst
+damage (e.g., at low engine speeds and loads).
+(3.4.2) Misfire causing emissions to exceed 1.5 times the FTP standards. Upon
+detection of the misfire level specified in section (e)(3.2.2), the following
+criteria shall apply for MIL illumination and fault code storage:
+(A)   Misfire within the first 1000 revolutions after engine start.
+(i)   A pending fault code shall be stored no later than after the first
+exceedance of the specified misfire level during a single driving cycle if
+the  exceedance occurs within the first 1000 revolutions after engine start
+(defined in section (c)) during which misfire detection is active.
+(ii)  If a pending fault code is stored, the OBDII system shall illuminate the MIL
+and store a confirmed fault code within ten seconds if an exceedanceof
+the specified misfire level is again detected in the first 1000 revolutions
+during any subsequent driving cycle, regardless of the conditions
+encountered during the driving cycle.
+(iii)  The pending fault code shall be erased at the end of the next driving
+cycle in which similar conditions to the engine conditions that occurred
+when the pending fault code was stored have been encountered without
+an exceedance of the specified percentage of misfire. The pending code
+may also be erased if similar conditions are not encountered during the
+next 80 driving cycles immediately following the initial detection of the
+malfunction.
+(B)   Exceedances after the first 1000 revolutions after engine start.
+(i)  A pending fault code shall be stored no later than after the fourth
+exceedance of the percentage of misfire specified in section (e)(3.2.2)
+during a single driving cycle.
+(ii)  If a pending fault code is stored, the OBDII system shall illuminate the MIL
+and store a confirmed fault code within ten seconds if the percentage of
+misfire specified in section (e)(3.2.2) is again exceeded four times
+during: (a) the driving cycle immediately following the storage of the
+pending fault code, regardless of the conditions encountered during the
+driving cycle; or (b) on the next driving cycle in which similar conditions
+28
+(see section (c)) to the engine conditions that occurred when the pending
+fault code was stored are encountered.
+(iii)  The pending fault code may be erased at the end of the next driving cycle
+in which similar conditions to the engine conditions that occurred when
+the pending fault code was stored have been encountered without an
+exceedance of the specified percentage of misfire. The pending code
+may also be erased if similar conditions are not encountered during the
+next 80 driving cycles immediately following initial detection of the
+malfunction.
+(3.4.3)  Storage of freeze frame conditions.
+(A)  A manufacturer shall store and erase freeze frame conditions either in
+conjunction with storing and erasing a pending fault code or in conjunction
+with storing and erasing a confirmed fault code.
+(B)   If freeze frame conditions are stored for a malfunction other than misfire or
+fuel system malfunction (see section (e)(6)) when a fault code is stored as
+specified in section (e)(3.4) above, the stored freeze frame information shall
+be replaced with freeze frame information regarding the misfire malfunction.
+(3.4.4)  Storage of misfire conditions for similar conditions determination. Upon
+detection of misfire under sections (e)(3.4.1) or (3.4.2), manufacturers shall
+store the following engine conditions: engine speed, load, and warm-up
+status of the first misfire event that resulted in the storage of the pending fault
+code.
+(3.4.5)  Extinguishing the MIL. The MIL may be extinguished after three sequential
+driving cycles in which similar conditions have been encountered without an
+exceedance of the specified percentage of misfire.
+</body>
+</html>

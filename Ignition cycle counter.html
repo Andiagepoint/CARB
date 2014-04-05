@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta name="author" content="AndiPower">
+<meta name="editor" content="html-editor phase 5">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+(5.5.1)  Definition:
+(A)   The ignition cycle counter is defined as a counter that indicates the number
+of ignition cycles a vehicle has experienced as defined in section
+(d)(5.5.2)(B).
+(B)  The ignition cycle counter shall be reported in accordance with the
+specifications in section (f)(5.2.1).
+(5.5.2)  Specifications for incrementing:
+(A)  The ignition cycle counter, when incremented, shall be incremented by an
+integer of one. The ignition cycle counter may not be incremented more than
+once per driving cycle.
+(B)  The ignition cycle counter shall be incremented within ten seconds if and only
+if the vehicle meets the engine start definition (see section (c)) for at least
+two seconds plus or minus one second.
+(C)  The OBDII system shall disable further incrementing of the ignition cycle
+counter within ten seconds if a malfunction of any component used to
+determine if the criteria in section (d)(5.5.2)(B) are satisfied (i.e., engine
+speed or time of operation) has been detected and the corresponding
+pending fault code has been stored. The ignition cycle counter may not be
+disabled from incrementing for any other condition. Incrementing of the
+ignition cycle counter shall resume within ten seconds when the malfunction
+is no longer present (e.g., pending code erased through self-clearing or by a
+scan tool command).
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta name="author" content="AndiPower">
+<meta name="editor" content="html-editor phase 5">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+In accordance with SAE J1979 specifications, the OBDII
+system shall indicate “complete” or “not complete” for each of the installed
+monitored components and systems identified in section (e)(1) through (e)(8)
+since the fault memory was last cleared. All components or systems that are
+monitored continuously shall always indicate “complete”. Those components or
+systems that are not subject to continuous monitoring shall immediately indicate
+“complete” upon the respective diagnostic(s) being fully executed and
+determining that the component or system is not malfunctioning. A component
+or system shall also indicate “complete” if after the requisite number of decisions
+necessary for determining MIL status have been fully executed, the monitor
+indicates a malfunction for the component or system. The status for each of the
+monitored components or systems shall indicate “not complete” whenever fault
+memory has been cleared or erased by a means other than that allowed in
+section (d)(2). Normal vehicle shut down (i.e., key off, engine off) may not cause
+the status to indicate “not complete”.
+<ol>
+<li>Subject to Executive Officer approval, if monitoring is disabled for a multiple
+number of driving cycles due to the continued presence of extreme operating
+conditions (e.g., cold ambient temperatures, high altitudes, etc), readiness
+status for the subject monitoring system may be set to indicate “complete”
+without monitoring having been completed. Executive Officer approval shall
+be based on the conditions for monitoring system disablement and the
+number of driving cycles specified without completion of monitoring before
+readiness is indicated as “complete”.</li>
+<li>For the evaporative system monitor:
+<ol type=A>
+<li>Except as provided below in section (f)(4.1.2)(B), the readiness status shall be set
+in accordance with section (f)(4.1) when both the functional check of the purge valve and
+the leak detection monitor of the orifice size specified in either section (e)(4.2.2)(B)
+or (C) (e.g., 0.040 inch or 0.020 inch) indicate that they are complete.</li>
+</ol>
+<ol type=A start=2>
+<li>For vehicles that utilize a 0.090 inch (in lieu of 0.040 inch) leak detection
+monitor in accordance with section (e)(4.2.5), the readiness status shall be
+set in accordance with section (f)(4.1) when both the functional check of the
+purge valve and the leak detection monitor of the orifice size specified in
+section (e)(4.2.2) (B) or (C) (e.g., 0.020 inch) indicate that they are complete.</li>
+</ol>
+<li>If the manufacturer elects to additionally indicate readiness status through the
+MIL in the key on, engine off position as provided for in section (d)(2.1.4), the
+readiness status shall be indicated in the following manner: If the readiness
+status for all monitored components or systems is “complete”, the MIL shall
+remain continuously illuminated in the key on, engine off position for at least
+15-20 seconds. If the readiness status for one or more of the monitored
+components or systems is “not complete”, after 15-20 seconds of operation
+in the key on, engine off position with the MIL illuminated continuously, the
+MIL shall blink once per second for 5-10 seconds. The data stream value for
+MIL status (section (f)(4.2)) shall indicate “commanded off” during this
+sequence unless the MIL has also been “commanded on” for a detected fault.</li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta name="author" content="AndiPower">
+<meta name="editor" content="html-editor phase 5">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+<dl>
+<dt>5.1</dt>
+<dd>For each monitor required in section (e) to separately report an in-use
+performance ratio, manufacturers shall implement software algorithms to report
+a numerator and denominator in the standardized format specified below and in
+accordance with the SAE J1979 specifications.</dd>
+</dl>
+<dl>
+<dt>5.2</dt>
+<dd>Numerical Value Specifications:
+<dl>
+<dt>5.2.1</dt>
+<dd>For the numerator, denominator, general denominator, and ignition cycle
+counter:
+<ol type=A><li>Each number shall have a minimum value of zero and a maximum value of
+65,535 with a resolution of one.</li></ol>
+<ol type=A start=2><li>Each number shall be reset to zero only when a non-volatile memory reset
+occurs (e.g., reprogramming event, etc.) or, if the numbers are stored in
+keep-alive memory (KAM), when KAM is lost due to an interruption in
+electrical power to the control module (e.g., battery disconnect, etc.).
+Numbers may not be reset to zero under any other circumstances including
+when a scan tool command to clear fault codes or reset KAM is received.</li></ol>
+<ol type=A start=3><li>If either the numerator or denominator for a specific component reaches the
+maximum value of 65,535 &plusmn;2, both numbers shall be divided by two before
+either is incremented again to avoid overflow problems.</li></ol>
+<ol type=A start=4><li>If the ignition cycle counter reaches the maximum value of 65,535 &plusmn;2, the
+ignition cycle counter shall rollover and increment to zero on the next ignition
+cycle to avoid overflow problems.</li></ol>
+<ol type=A start=5><li>If the general denominator reaches the maximum value of 65,535 &plusmn;2, the
+general denominator shall rollover and increment to zero on the next driving
+cycle that meets the general denominator definition to avoid overflow
+problems.</li></ol>
+<ol type=A start=6><li>If a vehicle is not equipped with a component (e.g., oxygen sensor bank 2,
+secondary air system), the corresponding numerator and denominator for
+that specific component shall always be reported as zero.</li></ol>
+</dd>
+</dl>
+<dl>
+<dt>5.2.2</dt>
+<dd>For the ratio:
+<ol type=A><li></li>The ratio shall have a minimum value of zero and a maximum value of
+7.99527 with a resolution of 0.000122.</ol>
+<ol type=A start=2><li>A ratio for a specific component shall be considered to be zero whenever
+the corresponding numerator is equal to zero and the corresponding
+denominator is not zero.</li></ol>
+<ol type=A start=3><li>A ratio for a specific component shall be considered to be the maximum
+value of 7.99527 if the corresponding denominator is zero or if the actual
+value of the numerator divided by the denominator exceeds the maximum
+value of 7.99527.</li></ol>
+</dd>
+</dl>
+</dd>
+</dl>
+</body>
+</html>
