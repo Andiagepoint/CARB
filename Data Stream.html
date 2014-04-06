@@ -6,50 +6,119 @@
 <meta name="editor" content="html-editor phase 5">
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
-The following signals shall be made available on demand through
-the standardized data link connector in accordance with SAE J1979
-specifications. The actual signal value shall always be used instead of a default
-or limp home value.
+The following signals shall be made available on demand
+through the standardized data link connector in accordance with SAE J1979
+specifications. The actual signal value shall always be used instead of a
+default or limp home value.
 <dl>
 <dt>4.2.1</dt>
 <dd>For all vehicles: calculated load value, number of stored confirmed fault
-codes, engine coolant temperature, engine speed, absolute throttle position
-(if equipped with a throttle), vehicle speed, and MIL status (i.e., commandedon or commanded-off).</dd>
+codes, engine coolant temperature, engine speed, absolute throttle
+position (if equipped with a throttle), vehicle speed, OBD requirements to
+which the engine is certified (e.g., California OBD II, EPA OBD, European
+OBD, non-OBD) and MIL status (i.e., commanded-on or commanded-off).</dd>
 </dl>
 <dl>
 <dt>4.2.2</dt>
 <dd>For all vehicles so equipped: fuel control system status (e.g., open loop,
-closed loop, etc.), fuel trim, fuel pressure, ignition timing advance, intake air
-temperature, manifold absolute pressure, air flow rate from mass air flow
-sensor, secondary air status (upstream, downstream, or atmosphere),
-oxygen sensor output, air/fuel ratio sensor output.</dd>
+closed loop, etc.), fuel trim, fuel pressure, ignition timing advance, intake
+air temperature, manifold absolute pressure, air flow rate from mass air
+flow sensor, secondary air status (upstream, downstream, or
+atmosphere), oxygen sensor output, air/fuel ratio sensor output.</dd>
 </dl>
 <dl>
 <dt>4.2.3</dt>
 <dd>For all 2005 and subsequent model year vehicles using the ISO 15765-4
-protocol for the standardized functions required in section (f), the following
-signals shall also be made available: absolute load, fuel level (if used to
-enable or disable any other diagnostics), relative throttle position (if
-equipped with a throttle), barometric pressure (directly measured or
-estimated), engine control module system voltage, commanded equivalence
-ratio, catalyst temperature (if directly measured or estimated for purposes of
-enabling the catalyst monitor(s)), monitor status (i.e., disabled for the rest of
-this driving cycle, complete this driving cycle, or not complete this driving
-cycle) since last engine shut-off for each monitor used for readiness status,
-time elapsed since engine start, distance traveled while MIL activated,
-distance traveled since fault memory last cleared, and number of warm-up
-cycles since fault memory last cleared.</dd>
+protocol for the standardized functions required in section (g), the
+following signals shall also be made available: absolute load, fuel level (if
+used to enable or disable any other diagnostics), relative throttle position
+(if equipped with a throttle), barometric pressure (directly measured or
+estimated), engine control module system voltage, commanded
+equivalence ratio, catalyst temperature (if directly measured or estimated
+for purposes of enabling the catalyst monitor(s)), monitor status (i.e.,
+disabled for the rest of this driving cycle, complete this driving cycle, or not
+complete this driving cycle) since last engine shut-off for each monitor
+used for readiness status, time elapsed since engine start, distance
+traveled while MIL activated, distance traveled since fault memory last
+cleared, and number of warm-up cycles since fault memory last cleared.</dd>
 </dl>
 <dl>
 <dt>4.2.4</dt>
-<dd>For all 2005 and subsequent model year vehicles so equipped and using the
-ISO 15765-4 protocol for the standardized functions required in section (f):
-ambient air temperature, evaporative system vapor pressure, commanded
-purge valve duty cycle/position, commanded EGR valve duty cycle/position,
-EGR error between actual and commanded, PTO status (active or not
-active), redundant absolute throttle position (for electronic throttle or other
-systems that utilize two or more sensors), absolute pedal position, redundant
-absolute pedal position, and commanded throttle motor position.</dd>
+<dd>For all 2005 and subsequent model year vehicles so equipped and using
+the ISO 15765-4 protocol for the standardized functions required in
+section (g): ambient air temperature, evaporative system vapor pressure,
+commanded purge valve duty cycle/position, commanded EGR valve duty
+cycle/position, EGR error between actual and commanded, PTO status
+(active or not active), redundant absolute throttle position (for electronic
+throttle or other systems that utilize two or more sensors), absolute pedal
+position, redundant absolute pedal position, and commanded throttle
+motor position.</dd>
+<dt>4.2.5</dt>
+<dd>Additionally, for all 2010 and subsequent model year vehicles with a diesel
+engine:
+<ol type=A>
+<li>Calculated load (engine torque as a percentage of maximum torque
+available at the current engine speed), driver’s demand engine torque (as
+a percentage of maximum engine torque), actual engine torque (as a
+percentage of maximum engine torque), engine oil temperature (if used
+for emission control or any OBD diagnostics), time elapsed since engine
+start; and</li>
+<li>Fuel level (if used to enable or disable any other diagnostics), barometric
+pressure (directly measured or estimated), engine control module system
+voltage; and</li>
+<li>Monitor status (i.e., disabled for the rest of this driving cycle, complete
+this driving cycle, or not complete this driving cycle) since last engine shutoff for each monitor used for readiness status, distance traveled (or
+engine run time for engines not utilizing vehicle speed information) while
+MIL activated, distance traveled (or engine run time for engines not
+utilizing vehicle speed information) since fault memory last cleared, and
+number of warm-up cycles since fault memory last cleared; and</li>
+<li>For all engines so equipped: absolute throttle position, relative throttle
+position, fuel injection timing, intake manifold temperature, intercooler
+temperature, ambient air temperature, commanded EGR valve duty
+cycle/position, actual EGR valve duty cycle/position, EGR error between
+actual and commanded, PTO status (active or not active), absolute pedal
+position, redundant absolute pedal position, commanded throttle motor
+position, fuel rate, boost pressure, commanded/target boost pressure,
+turbo inlet air temperature, fuel rail pressure, commanded fuel rail
+pressure, PM filter inlet pressure, PM filter inlet temperature, PM filter
+outlet pressure, PM filter outlet temperature, PM filter delta pressure,
+exhaust pressure sensor output, exhaust gas temperature sensor output,
+injection control pressure, commanded injection control pressure,
+turbocharger/turbine speed, variable geometry turbo position, commanded
+variable geometry turbo position, turbocharger compressor inlet
+temperature, turbocharger compressor inlet pressure, turbocharger
+turbine inlet temperature, turbocharger turbine outlet temperature,
+wastegate valve position, glow plug lamp status, PM sensor output, and
+NOx sensor output;</li>
+<li>hAdditionally, for all 2010 and subsequent model year medium-duty
+vehicles with a diesel engine certified on an engine dynamometer: NOx
+NTE control area status (i.e., inside control area, outside control area,
+inside manufacturer-specific NOx NTE carve-out area, or NTE deficiency
+for NOx active area) and PM NTE control area status (i.e., inside control
+area, outside control area, inside manufacturer-specific PM NTE carve-out
+area, or NTE deficiency for PM active area);</li>
+<li>For all 2013 and subsequent model year vehicles, normalized trigger for
+PM filter regeneration, PM filter regeneration status; and</li>
+<li>For all 2013 and subsequent model year vehicles, average distance (or
+engine run time for engines not utilizing vehicle speed information)
+between PM filter regenerations</li>
+</ol>
+</dd>
+<dt>4.2.6</dt>
+<dd>Additionally, for all 2013 and subsequent model year vehicles so
+equipped:
+<ol type=A>
+<li>EGR temperature, variable geometry turbo control status (e.g., open loop,
+closed loop), reductant level (e.g., urea tank fill level), alcohol fuel
+percentage, NOx adsorber regeneration status, NOx adsorber deSOx
+status, hybrid battery pack remaining charge; and</li>
+<li>distance traveled while low/empty SCR reductant driver
+warning/inducement active</li>
+</ol>
+</dd>
+<dt>4.2.7</dt>
+<dd>Additionally, for all 2015 and subsequent model year vehicles: type of fuel
+currently being used.</dd>
 </dl>
 </body>
 </html>

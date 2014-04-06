@@ -6,19 +6,38 @@
 <meta name="editor" content="html-editor phase 5">
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
-On all vehicles, a software calibration
-identification number (CAL ID) for the diagnostic or emission critical  powertrain
-control unit(s) shall be made available through the standardized data link
-connector in accordance with the SAE J1979 specifications. A unique CALID
-shall be used for every emission-related calibration and/or software set having at
-least one bit of different data from any other emission-related calibration and/or
-software set. Control units coded with multiple emission or diagnostic
-calibrations and/or software sets shall indicate a unique CAL ID for each variant
-in a manner that enables an off-board device to determine which variant is being
-used by the vehicle.  Control units that utilize a strategy that will result in MIL
-illumination if the incorrect variant is used (e.g., control units that contain variants
-for manual and automatic transmissions but will illuminate the MIL if the variant
-selected does not match the type of transmission on the vehicle) are not
-required to use unique CAL IDs.
+<dl>
+<dt>4.6.1</dt>
+<dd>On all vehicles, a software calibration identification number (CAL ID) for
+the diagnostic or emission critical powertrain control unit(s) shall be made
+available through the standardized data link connector in accordance with
+128
+the SAE J1979 specifications.  Except as provided for in section
+(g)(4.6.3), for 2009 and subsequent model year vehicles, the OBD II
+system shall use a single software calibration identification number (CAL
+ID) for each diagnostic or emission critical powertrain control unit(s) that
+replies to a generic scan tool with a unique module address.</dd>
+<dt>4.6.2</dt>
+<dd>A unique CAL ID shall be used for every emission-related calibration
+and/or software set having at least one bit of different data from any other
+emission-related calibration and/or software set. Control units coded with
+multiple emission or diagnostic calibrations and/or software sets shall
+indicate a unique CAL ID for each variant in a manner that enables an off board device to determine which variant is being used by the vehicle.
+Control units that utilize a strategy that will result in MIL illumination if the
+incorrect variant is used (e.g., control units that contain variants for
+manual and automatic transmissions but will illuminate the MIL if the
+variant selected does not match the type of transmission on the vehicle)
+are not required to use unique CAL IDs.</dd>
+<dt>4.6.3</dt>
+<dd>For 2009 and subsequent model year vehicles, manufacturers may
+request Executive Officer approval to respond with more than one CAL ID
+per diagnostic or emission critical powertrain control unit. Executive
+Officer approval of the request shall be based on the method used by the
+manufacturer to ensure each control unit will respond to a SAE J1978
+scan tool with the CAL IDs in order of highest to lowest priority with
+regards to areas of the software most critical to emission and OBD II
+system performance.</dd>
+</dl>
+
 </body>
 </html>

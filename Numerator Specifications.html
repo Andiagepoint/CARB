@@ -6,73 +6,103 @@
 <meta name="editor" content="html-editor phase 5">
 </head>
 <body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
-(4.2.1) Definition: The numerator is defined as a measure of the number of times a
-vehicle has been operated such that all monitoring conditions necessary for
-a specific monitor to detect a malfunction have been encountered.
-(4.2.2)  Specifications for incrementing:
-(A)  Except as provided for in section (d)(4.2.2)(E), the numerator, when
-incremented, shall be incremented by an integer of one. The numerator may
-not be incremented more than once per driving cycle.
-(B)  The numerator for a specific monitor shall be incremented within ten
+<dl>
+<dt>4.2.1</dt>
+<dd>Definition: The numerator is defined as a measure of the number of times
+a vehicle has been operated such that all monitoring conditions necessary
+for a specific monitor to detect a malfunction have been encountered.</dd>
+</dl>
+<dl>
+<dt>4.2.2</dt>
+<dd>Specifications for incrementing:
+<ol type=A>
+<li>Except as provided for in sections (d)(4.2.2)(E) and (F), the numerator,
+when incremented, shall be incremented by an integer of one. The
+numerator may not be incremented more than once per driving cycle.</li>
+<li>The numerator for a specific monitor shall be incremented within ten
 seconds if and only if the following criteria are satisfied on a single driving
 cycle:
-(i)  Every monitoring condition necessary for the monitor of the specific
+<ol type=i>
+<li>Every monitoring condition necessary for the monitor of the specific
 component to detect a malfunction and store a pending fault code has
-been satisfied, including enable criteria, presence or absence of related
-fault codes, sufficient length of monitoring time, and diagnostic executive
-priority assignments (e.g., diagnostic “A” must execute prior to diagnostic
-“B”, etc.). For the purpose of incrementing the numerator, satisfying all
-the monitoring conditions necessary for a monitor to determine the
-component is passing may not, by itself, be sufficient to meet this criteria;
-(ii)  For monitors that require multiple stages or events in a single driving
-cycle to detect a malfunction, every monitoring condition necessary for all
-events to have completed must be satisfied;
-(iii)  For monitors that require intrusive operation of components to detect a
-malfunction, a manufacturer shall request Executive Officer approval of
-the strategy used to determine that, had a malfunction been present, the
-monitor would have detected the malfunction. Executive Officer approval
-11
-of the request shall be based on the equivalence of the strategy to actual
-intrusive operation and the ability of the strategy to accurately determine if
-every monitoring condition necessary for the intrusive event to occur was
-satisfied.
-(iv)  In addition to the requirements of section (d)(4.2.2)(B)(i ) through (iii)
+been satisfied, including enable criteria, presence or absence of
+related fault codes, sufficient length of monitoring time, and diagnostic
+executive priority assignments (e.g., diagnostic “A” must execute prior
+to diagnostic “B”, etc.). For the purpose of incrementing the
+numerator, satisfying all the monitoring conditions necessary for a
+monitor to determine the component is passing may not, by itself, be
+sufficient to meet this criteria;</li>
+<li>For monitors that require multiple stages or events in a single driving
+cycle to detect a malfunction, every monitoring condition necessary for
+all events to have completed must be satisfied;</li>
+<li>For monitors that require intrusive operation of components to detect a
+malfunction, a manufacturer shall request Executive Officer approval
+of the strategy used to determine that, had a malfunction been
+present, the monitor would have detected the malfunction. Executive
+Officer approval of the request shall be based on the equivalence of
+the strategy to actual intrusive operation and the ability of the strategy
+to accurately determine if every monitoring condition necessary for the
+intrusive event to occur was satisfied.</li>
+<li>In addition to the requirements of section (d)(4.2.2)(B)(i) through (iii)
 above, the secondary air system monitor numerator(s) shall be
 incremented if and only if the criteria in section (B) above have been
-satisfied during normal operation of the secondary air system for vehicles
-that require monitoring during normal operation (sections (e)(5.2.2)
-through (5.2.4)). Monitoring during intrusive operation of the secondary
-air system later in the same driving cycle solely for the purpose of
-monitoring may not, by itself, be sufficient to meet this criteria.
-(C)  For monitors that can generate results in a “gray zone” or “non-detection
+satisfied during normal operation of the secondary air system for
+vehicles that require monitoring during normal operation (sections
+(e)(5.2.2) through (5.2.4)). Monitoring during intrusive operation of the
+secondary air system later in the same driving cycle solely for the
+purpose of monitoring may not, by itself, be sufficient to meet this
+criteria.</li>
+</ol>
+</li>
+<li>For monitors that can generate results in a “gray zone” or “non-detection
 zone” (i.e., results that indicate neither a passing system nor a malfunctioning
-system) or in a “non-decision zone” (e.g., monitors that increment and
-decrement counters until a pass or fail threshold is reached), the
-manufacturer shall submit a plan for appropriate incrementing of the
-numerator to the Executive Officer for review and approval. In general, the
-Executive Officer shall not approve plans that allow the numerator to be
-incremented when the monitor indicates a result in the “non-detection zone”
-or prior to the monitor reaching a decision.  In reviewing the plan for
-approval, the Executive Officer shall consider data and/or engineering
-evaluation submitted by the manufacturer demonstrating the expected
-frequency of results in the “non-detection zone” and the ability of the monitor
-to accurately determine if a monitor would have detected a malfunction
-instead of a result in the “non-detection zone” had an actual malfunction been
-present.
-(D)   For monitors that run or complete during engine off operation, the numerator
-shall be incremented within 10 seconds after the monitor has completed
-during engine off operation or during the first 10 seconds of engine start on
-the subsequent driving cycle.
-(E)  Manufacturers utilizing alternate statistical MIL illumination protocols as
-allowed in section (d)(2.2.3) for any of the monitors requiring a numerator
-shall submit a plan for appropriate incrementing of the numerator to the
-Executive Officer for review and approval.  Executive Officer approval of the
-plan shall be conditioned upon the manufacturer providing supporting data
-and/or engineering evaluation for the proposed plan, the equivalence of the
-incrementing in the manufacturer's plan to the incrementing specified in
-section (d)(4.2.2) for monitors using the standard MIL illumination protocol,
-and the overall equivalence of the manufacturer's plan in determining that the
-minimum acceptable in-use performance ratio in section (d)(3.2.1) is
-satisfied
+system) or in a “non-decision zone” (i.e., results that indicate neither a passing system nor a
+malfunctioning system) or in a “non-decision zone” (e.g., monitors that
+increment and decrement counters until a pass or fail threshold is
+reached), the manufacturer shall submit a plan for appropriate
+incrementing of the numerator to the Executive Officer for review and
+approval.  In general, the Executive Officer shall not approve plans that
+allow the numerator to be incremented when the monitor indicates a result
+in the “non-detection zone” or prior to the monitor reaching a decision. In
+reviewing the plan for approval, the Executive Officer shall consider data
+and/or engineering evaluation submitted by the manufacturer
+demonstrating the expected frequency of results in the “non-detection
+zone” and the ability of the monitor to accurately determine if a monitor
+would have detected a malfunction instead of a result in the “nondetection zone” had an actual malfunction been present.</li>
+<li>For monitors that run or complete during engine off operation, the
+numerator shall be incremented within 10 seconds after the monitor has
+completed during engine off operation or during the first 10 seconds of
+engine start on the subsequent driving cycle.</li>
+<li>Except as specified in section (d)(4.2.2)(F) for exponentially weighted
+moving averages, manufacturers utilizing alternate statistical MIL
+illumination protocols as allowed in section (d)(2.2.6) for any of the
+monitors requiring a numerator shall submit a plan for appropriate
+incrementing of the numerator to the Executive Officer for review and
+approval. Executive Officer approval of the plan shall be conditioned
+upon the manufacturer providing supporting data and/or engineering
+evaluation for the proposed plan, the equivalence of the incrementing in
+the manufacturer's plan to the incrementing specified in section (d)(4.2.2)
+for monitors using the standard MIL illumination protocol, and the overall
+equivalence of the manufacturer's plan in determining that the minimum
+acceptable in-use performance ratio in section (d)(3.2.1) is satisfied.</li>
+<li>(F) Manufacturers using an exponentially weighted moving average (EWMA)
+as the alternate statistical MIL illumination protocol approved in
+accordance with section (d)(2.2.6) shall increment the numerator as
+follows:
+<ol type=i>
+<li>Following a reset or erasure of the EWMA result, the numerator may
+not be incremented until after the requisite number of decisions
+necessary for MIL illumination have been fully executed.</li>
+<li>After the number of decisions required in section (d)(4.2.2)(F)(i) above,
+the numerator, when incremented, shall be incremented by an integer
+of one and may not be incremented more than once per driving cycle.
+Incrementing of the numerator shall also be in accordance with
+sections (d)(4.2.2)(B), (C), and (D).</li>
+</ol>
+</li>
+</ol>
+</dd>
+</dl>
+
 </body>
 </html>

@@ -8,69 +8,106 @@
 <body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
 <dl>
 <dt>4.4.1</dt>
-<dd>For all monitored components and systems, stored pending and confirmed
-fault codes shall be made available through the diagnostic connector in
-accordance with SAE J1979 specifications. Standardized fault codes
-conforming to SAE J2012 shall be employed.</dd>
+<dd>For all monitored components and systems, stored pending, confirmed,
+and permanent fault codes shall be made available through the diagnostic
+connector in accordance with SAE J1979 specifications. Standardized
+fault codes conforming to SAE J2012 shall be employed.</dd>
 </dl>
 <dl>
 <dt>4.4.2</dt>
 <dd>The stored fault code shall, to the fullest extent possible, pinpoint the likely
-cause of the malfunction. To the extent feasible on all 2005 and subsequent
-model year vehicles, manufacturers shall use separate fault codes for every
-diagnostic where the diagnostic and repair procedure or likely cause of the
-failure is different. In general, rationality and functional diagnostics shall use
-different fault codes than the respective circuit continuity diagnostics.
-Additionally, input component circuit continuity diagnostics shall use different
-fault codes for distinct malfunctions (e.g., out-of-range low, out-of-range high,
-open circuit, etc.).</dd>
+cause of the malfunction. To the extent feasible on all 2005 and
+subsequent model year vehicles, manufacturers shall use separate fault
+codes for every diagnostic where the diagnostic and repair procedure or
+likely cause of the failure is different. In general,  rationality and functional
+diagnostics shall use different fault codes than the respective circuit
+continuity diagnostics. Additionally, input component circuit continuity
+diagnostics shall use different fault codes for distinct malfunctions (e.g.,
+out-of-range low, out-of-range high, open circuit, etc.).</dd>
 </dl>
 <dl>
 <dt>4.4.3</dt>
-<dd>Manufacturers shall use appropriate SAE-defined fault codes of SAE J2012
-(e.g., P0xxx, P2xxx) whenever possible. With Executive Officer approval,
-manufacturers may use manufacturer-defined fault codes in accordance with
-SAE J2012 specifications (e.g., P1xxx). Factors to be considered by the
-Executive Officer for approval shall include the lack of available SAE-defined
-fault codes, uniqueness of the diagnostic or monitored component, expected
-future usage of the diagnostic or component, and estimated usefulness in
-providing additional diagnostic and repair information to service technicians.
-Manufacturer-defined fault codes shall be used consistently (i.e., the same
-fault code may not be used to represent two different failure modes) across a
-manufacturer’s entire product line.</dd>
+<dd>Manufacturers shall use appropriate SAE-defined fault codes of SAE
+J2012 (e.g., P0xxx, P2xxx) whenever possible. With Executive Officer
+approval, manufacturers may use manufacturer-defined fault codes in
+accordance with SAE J2012 specifications (e.g., P1xxx). Factors to be
+considered by the Executive Officer for approval shall include the lack of
+available SAE-defined fault codes, uniqueness of the diagnostic or
+monitored component, expected future usage of the diagnostic or
+component, and estimated usefulness in providing additional diagnostic
+and repair information to service technicians. Manufacturer-defined fault
+codes shall be used consistently (i.e., the same fault code may not be
+used to represent two different failure modes) across a manufacturer’s
+entire product line.</dd>
 </dl>
 <dl>
 <dt>4.4.4</dt>
-<dd>A fault code (pending and/or confirmed, as required in sections (d) and (e))
-shall be stored and available to an SAE J1978 scan tool within 10 seconds
-after a diagnostic has determined that a malfunction has occurred.</dd>
+<dd>A fault code (pending and/or confirmed, as required in sections (d) (e),
+and (f)) shall be stored and available to an SAE J1978 scan tool within 10
+seconds after a diagnostic has determined that a malfunction has
+occurred.  A permanent fault code shall be stored and available to an SAE
+J1978 scan tool no later than the end of an ignition cycle (including
+electronic control unit shutdown) in which the corresponding confirmed
+fault code causing the MIL to be illuminated has been stored.</dd>
 </dl>
 <dl>
 <dt>4.4.5</dt>
 <dd>Pending fault codes:
 <ol type=A>
-<li>On all 2005 and subsequent model year vehicles, pending fault codes for all
-components and systems (including continuously and non-continuously
+<li>On all 2005 and subsequent model year vehicles, pending fault codes for
+all components and systems (including continuously and non-continuously
 monitored components) shall be made available through the diagnostic
-connector in accordance with SAE J1979 specifications (e.g., Mode/Service
-$07).</li>
+connector in accordance with SAE J1979 specifications (e.g.,
+Mode/Service $07).</li>
 </ol>
 <ol type=A start=2>
 <li>On all 2005 and subsequent model year vehicles, a pending fault code(s)
-shall be stored and available through the diagnostic connector for all currently
-malfunctioning monitored component(s) or system(s), regardless of the MIL
-illumination status or confirmed fault code status (e.g., even after a pending
-fault has matured to a confirmed fault code and the MIL is illuminated, a
-pending fault code shall be stored and available if the most recent monitoring
-event indicates the component is malfunctioning).</li>
+shall be stored and available through the diagnostic connector for all
+currently malfunctioning monitored component(s) or system(s), regardless
+of the MIL illumination status or confirmed fault code status (e.g., even
+after a pending fault has matured to a confirmed fault code and the MIL is
+illuminated, a pending fault code sh all be stored and available if the most
+recent monitoring event indicates the component is malfunctioning).</li>
 </ol>
 <ol type=A start=3>
-<li>Manufacturers using alternate statistical protocols for MIL illumination as
-allowed in section (d)(2.2.3) shall submit to the Executive Officer a protocol
-for setting pending fault codes. The Executive Officer shall approve the
-proposed protocol upon determining that, overall, it is equivalent to the
-requirements in sections (f)(4.4.5)(A) and (B) and that it effectively provides
-service technicians with a quick and accurate indication of a pending failure.</li>
+<li> Manufacturers using alternate statistical protocols for MIL illumination as
+allowed in section (d)(2.2.6) shall submit to the Executive Officer a
+protocol for setting pending fault codes. The Executive Officer shall
+approve the proposed protocol upon determining that, overall, it is
+equivalent to the requirements in sections (g)(4.4.5)(A) and (B) and that it
+effectively provides service technicians with a quick and accurate
+indication of a pending failure.</li>
+</ol>
+</dd>
+<dt>4.4.5</dt>
+<dd>Permanent fault codes:
+<ol type=A>
+<li>Permanent fault codes for all components and systems shall be made
+available through the diagnostic connector in a standardized format that
+distinguishes permanent fault codes from both pending fault codes and
+confirmed fault codes.</li>
+<li>A confirmed fault code shall be stored as a permanent fault code no later
+than the end of the ignition cycle and subsequently at all times that the
+confirmed fault code is commanding the MIL on (e.g., for currently failing
+systems but not during the 40 warm-up cycle self-healing process
+described in section (d)(2.4)).</li>
+<li>Permanent fault codes shall be stored in NVRAM and may not be
+erasable by any scan tool command (generic or enhanced) or by
+disconnecting power to the on-board computer.</li>
+<li>Permanent fault codes may not be erased when the control module
+containing the permanent fault codes is reprogrammed unless the
+readiness status (refer to section (g)(4.1)) for all monitored components
+and systems is set to “not complete” in conjunction with the
+reprogramming event.</li>
+<li>The OBD system shall have the ability to store a minimum of four current
+confirmed fault codes as permanent fault codes in NVRAM. If the number
+of confirmed fault codes currently commanding the MIL on exceeds the
+maximum number of permanent fault codes that can be stored, the OBD
+system shall store the earliest detected confirmed fault codes as
+permanent fault codes. If additional confirmed fault codes are stored
+when the maximum number of permanent fault codes is already stored in
+NVRAM, the OBD system may not replace any existing permanent fault
+code with the additional confirmed fault codes.</li>
 </ol>
 </dd>
 </dl>
