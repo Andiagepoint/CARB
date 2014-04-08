@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta name="author" content="AndiPower">
+<meta name="editor" content="html-editor phase 5">
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#FF0000" alink="#FF0000" vlink="#FF0000">
+ <dl>
+ <dt>15.2.1</dt>
+ <dd>Input Components:
+ (A) The OBD II system shall detect malfunctions of input components caused
+ by a lack of circuit continuity, out-of-range values, and, where feasible,
+ rationality faults. To the extent feasible, the rationality fault diagnostics
+ shall verify that a sensor output is neither inappropriately high nor
+ inappropriately low (e.g., “two-sided” diagnostics).
+ (B) To the extent feasible, rationality faults shall be separately detected and
+ store different fault codes than the respective lack of circuit continuity and
+ out of range diagnostics. Additionally, input component lack of circuit
+ continuity and out of range faults shall be separately detected and store
+ different fault codes for each distinct malfunction (e.g., out-of-range low,
+ out-of-range high, open circuit, etc.). Manufacturers are not required to
+ store separate fault codes for lack of circuit continuity faults that cannot be
+ distinguished from other out-of-range circuit faults.
+ (C) For input components that are directly or indirectly used for any emission
+ control strategies that are not covered under sections (f)(1) through (f)(13)
+ (e.g., exhaust temperature sensors used for a control strategy that
+ regulates SCR catalyst inlet temperature within a target window), the
+ OBD II system shall detect rationality malfunctions that prevent the
+ component from correctly sensing any condition necessary for the
+ strategy to operate in its intended manner. These malfunctions include
+ faults that inappropriately prevent or delay the activation of the emission
+ control strategy, cause the system to erroneously exit the emission control
+ strategy, or where the control strategy has used up all of the adjustments
+ or authority allowed by the manufacturer and is still unable to achieve the
+ desired condition. The Executive Officer may waive detection of specific
+ malfunctions upon determining that the manufacturer has submitted data
+ and/or an engineering evaluation that demonstrate that reliable detection
+ of the malfunction is technically infeasible or would require additional
+ hardware.</dd>
+ <dt>15.2.2</dt>
+ <dd>Output Components/Systems:
+ <ol type=A>
+ <li>The OBD II system shall detect a malfunction of an output
+ component/system when proper functional response of the component
+ and system to computer commands does not occur. If a functional check
+ is not feasible, the OBD II system shall detect malfunctions of output
+ components/systems caused by a lack of circuit continuity or circuit fault
+ (e.g., short to ground or high voltage). For output component lack of
+ circuit continuity faults and circuit faults, manufacturers are not required to
+ store different fault codes for each distinct malfunction (e.g., open circuit,
+ shorted low, etc.). Manufacturers are not required to activate an output
+ component/system when it would not normally be active for the purposes
+ of performing functional monitoring of output components/systems as
+ required in section (f)(15).</li>
+ <li>The idle fuel control system shall be monitored for proper functional
+ response to computer commands.  A malfunction shall be detected when
+ any of the following conditions occur:
+ <ol type=i>
+ <li>The idle control system cannot achieve or maintain the idle speed
+ within +/- 30 percent of the manufacturer-specified target or desired
+ engine speed.</li>
+ <li>The idle control system cannot achieve the target idle speed within the
+ smallest engine speed tolerance range required by the OBD II system
+ to enable any other monitor.</li>
+ <li>For 2013 and subsequent model year vehicles, the idle control system
+ cannot achieve the fuel injection quantity within the smallest fueling
+ quantity tolerance range required by the OBD II system to enable any
+ other monitor.</li>
+ <li>For 2013 and subsequent model year vehicles, the idle control system
+ cannot achieve the target idle speed with a fuel injection quantity within
+ +/-50 percent of the fuel quantity necessary to achieve the target idle
+ speed for a properly functioning vehicle and the given operating
+ conditions.</li>
+ </ol>
+ </li>
+ <li>Glow plugs/intake air heaters shall be monitored for proper functional
+ response to computer commands. The glow plug/intake air heater
+ circuit(s) shall be monitored for proper current and voltage drop.  The
+ Executive Officer shall approve other monitoring strategies based on
+ manufacturer’s data and/or engineering analysis demonstrating equally
+ reliable and timely detection of malfunctions. If a manufacturer
+ demonstrates that a single glow plug failure cannot cause a measurable
+ increase in emissions during any reasonable driving condition, the
+ manufacturer shall detect a malfunction for the minimum number of glow
+ plugs needed to cause an emission increase. Further, to the extent
+ feasible on existing engine designs (without adding additional hardware
+ for this purpose) and on all new design engines, the stored fault code
+ shall identify the specific malfunctioning glow plug(s).  For 2010 and
+ subsequent model year vehicles, manufacturers shall detect a malfunction
+ when a single glow plug/intake air heater no longer operates within the
+ manufacturer’s specified limits for normal operation (e.g., within
+ specifications established by the manufacturer with the part supplier for
+ acceptable part performance at high mileage).</li>
+ <li>The wait-to-start lamp circuit shall be monitored for malfunctions that
+ cause the lamp to fail to illuminate when commanded on (e.g., burned out
+ bulb).</li>
+ <li>For output components/systems that are directly or indirectly used for any
+ emission control strategies that are not covered under sections (f)(1)
+ through (f)(13) (e.g., an intake throttle used for a control strategy that
+ adjusts intake throttle position to regulate SCR catalyst inlet temperature
+ within a target window), the OBD II system shall detect functional
+ malfunctions that prevent the component/system from achieving the
+ desired functional response necessary for the strategy to operate in its
+ intended manner. These malfunctions include faults that inappropriately
+ prevent or delay the activation of the emission control strategy, cause the
+ system to erroneously exit the emission control strategy, or where the
+ control strategy has used up all of the adjustments or authority allowed by
+ the manufacturer and is still unable to achieve the desired con dition. The
+ Executive Officer may waive detection of specific malfunctions upon
+ determining that the manufacturer has submitted data and/or an
+ engineering evaluation that demonstrate that reliable detection of the
+ malfunction is technically infeasible or would require additional hardware.</li>
+ <li>For 2015 and subsequent model year vehicles that utilize fuel control
+ system components (e.g., injectors, fuel pump) that have tolerance
+ compensation features implemented in hardware or software during
+ production or repair procedures (e.g., individually coded injectors for flow
+ characteristics that are programmed into an electronic control unit to
+ compensate for injector to injector tolerances, fuel pumps that use in-line
+ resistors to correct for differences in fuel pump volume output), the
+ components shall be monitored to ensure the proper compensation is
+ being used.
+ <ol type=i>
+ <li>The system shall detect a fault if the compensation being used by the
+ control system does not match the compensation designated for the
+ installed component (e.g., the flow characteristic coding designated on
+ a specific injector does not match the compensation being used by the
+ fuel control system for that injector). If a manufacturer demonstrates
+ that a single component (e.g., injector) using the wrong compe nsation
+ cannot cause a measurable increase in emissions during any
+ reasonable driving condition, the manufacturer shall detect a
+ malfunction for the minimum number of components using the wrong
+ compensation needed to cause an emission increase. Further, the
+ stored fault code shall identify the specific component that does not
+ match the compensation.</li>
+ <li>Monitoring of the fuel control system components under section
+ (f)(15.2.2)(F)(i) is not required if the manufacturer demonstrates that
+ both of the following criteria are satisfied: (1) no fault of the
+ components’ tolerance compensation features (e.g., wrong
+ compensation being used) could cause emissions to increase by 15
+ percent or more of the applicable full useful life standard as measured
+ from an applicable emission test cycle; and (2) no fault of the
+ components’ tolerance compensation features could cause emissions
+ to exceed the applicable full useful life standard as measured from an
+ applicable emission test cycle.  For purposes of determining if the
+ emission criteria above are met, the manufacturers shall request
+ Executive Officer approval of the test plan for which the emission
+ impact will be determined. The test plan shall include the combination
+ of failed components and the degree of mismatch (e.g., wrong
+ compensation) used as well as the test procedure and emission test
+ cycles used to demonstrate the emission impact, including the
+ necessary preconditioning cycles used by the system to correct or
+ adapt for any mismatch and mitigate the emission impact. Executive
+ Officer approval shall be granted upon determining that the
+ manufacturer has submitted data and/or engineering analysis that
+ demonstrate that the conditions necessary for the system to correct or
+ adapt will readily occur in a timely manner during in-use operation and
+ that the test conditions represent worst case emissions from typical in use service actions when considering the distribution and variance of
+ the compensation values and parts (e.g., replacement of one or more
+ plus-one-sigma injectors with minus-one-sigma injectors without
+ updating of the compensation value).</li>
+ </ol>
+ </li>
+ </ol>
+ </dd>
+ </dl>
+
+</body>
+</html>
