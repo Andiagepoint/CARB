@@ -145,58 +145,37 @@
          <dt>(6)</dt>
          <dd>Ausf&uuml;hrung eines unregelm&auml;&szlig;igen Regenerationsereignisses</dd>
          </dl></li>
-         <li>“Base fuel schedule” refers to the fuel calibration schedule programmed into the
-         Powertrain Control Module or PROM when manufactured or when updated by some
-         off-board source, prior to any learned on-board correction.</li>
-         <li>“Calculated load value” refers to an indication of the percent engine capacity that
-         is being used and is defined in Society of Automotive Engineers (SAE) J 1979 "E/E
-         Diagnostic Test Modes", (SAE J1979), incorporated by reference (section (g)(1.4)
-         1
-         ).
-         For diesel applications, in lieu of the definition in SAE J1979,  the calculated load
-         value may alternatively be determined by the ratio of current output torque to
-         maximum output torque at current engine speed as defined by suspect parameter
-         number (SPN) 92 of SAE J1939 “Recommended Practice for a Serial Control and
-         Communications Vehicle Network” (SAE J1939), incorporated by reference.</li>
-         <li>“Confirmed fault code” is defined as the diagnostic trouble code stored when an
-         OBD II system has confirmed that a malfunction exists (e.g., typically on the second
-         driving cycle that the malfunction is detected) in accordance with the requirements
-         of sections (e), (f), and (g)(4.4).</li>
-         <li>“Continuously,” if used in the context of monitoring conditions for circu it
-         continuity, lack of circuit continuity, circuit faults, and out-of-range values, means
-         monitoring is always enabled, unless alternate enable conditions have been
-         approved by the Executive Officer in accordance with section (d)(3.1.1), and
-         sampling of the signal used for monitoring occurs at a rate no less than two samples
-         per second. If for control purposes, a computer input component is sampled less
-         frequently, the signal of the component may instead be evaluated each time
-         sampling occurs.</li>
-         <li>“Deactivate” means to turn-off, shutdown, desensitize, or otherwise make
-         inoperable through software programming or other means during the actual life of
-         the vehicle.</li>
-         <li>“Diagnostic or emission critical” electronic powertrain control unit refers to the
-         engine and transmission control unit(s). For the 2005 and subsequent model years,it also includes any other on-board electronic powertrain control unit containing
-         software that: (1) has primary control over any of the monitors required by sections
-         (e)(1.0) through (e)(14.0), (e)(16.0), (f)(1) through (f)(14), and (f)(16) or, (2)
-         excluding anti-lock brake system (ABS) control units or stability/traction control  units,
-         has primary control over the diagnostics for more than two of the components
-         required to be monitored by sections (e)(15.0) and (f)(15).  For purposes of criterion
-         (2) above, all glow plugs in an engine shall be considered “one” component in lieu of
-         each glow plug being considered a separate component.</li>
-         <li>“Diesel engines” refers to engines using a compression ignition thermodynamic
-         cycle.</li>
-         <li>“Driving cycle” consists of engine startup and engine shutoff and includes the
-         period of engine off time up to the next engine startup. For vehicles that employ
-         engine shutoff strategies (e.g., engine shutoff at idle), the manufacturer may request
-         Executive Officer approval to use an alternate definition for driving cycle (e.g., key
-         on and key off). Executive Officer approval of the alternate definition shall be based
-         on equivalence to engine startup and engine shutoff signaling the beginning and
-         ending of a single driving event for a conventional vehicle.  For applications that are
-         used in both medium-duty and heavy-duty classes, the manufacturer may use the
-         driving cycle definition of title 13, CCR, section 1971.1 in lieu of this definition.
-         Engine restarts following an engine shut-off that has been neither commanded by
-         the vehicle operator nor by the engine control strategy but caused by an event such
-         as an engine stall may be considered a new driving cycle or a continuation of the
-         existing driving cycle.</li>
+         <li>"Grundbezinverbrauch" bezieht sich auf die Bezinverbrauchseinstellung im Steuermodul oder
+         PROM des Motorsteuerger&auml;ts, die bei der Produktion oder nachtr&auml;glich aufgespielt und nicht durch eine Lernkurve
+         verbessert wurde.</li>
+         <li>"Berechneter Lastwert" bezieht sich auf eine prozentuale Angabe der Motorkapazit&auml;t, die in
+         Verwendung ist und in der SAE J 1979 "E/E Diagnostic Test Modes", (SAE J1979), eingef&uuml;hrt im Verweis (section (g)(1.4)
+         1) definiert ist. F&uuml;r Diesel Motoren gilt anstatt der Definition SAE J1979, das Folgende. Alternativ wird die
+         berechnete Last bestimmt durch das Verh&auml;ltnis von aktuellem Abtriebsdrehmoment zu maximalem Abtriebsdrehmoment bei
+         aktueller Motorgeschwindigkeit, wie sie durch die Suspect Parameter Number (SPN) 92 der SAE J1939 "Praxisempfehlungen
+         f&uuml;r ein Serielles Kontroll- und Kommunikationsnetzwerk in Fahrzeugen" (SAE J1939).</li>
+         <li>Als "Dauerhafter Fehlercode" wird ein gespeicherter Fehlerdiagnose Code bezeichnet, wenn ein
+         OBD II System eine Fehlfunktion erkannt hat, die im Einklang mit den Anforderungen aus Abschnitt (e), (f) und (g) (4.4) steht.</li>
+         <li>Wenn "Andauernd" im Zusammenhang mit &Uuml;berwachungsbedingungen in einem ununterbrochenen Kreislauf, einem unterbrochenen
+         Kreislauf, Verbindungsfehlern und au&szlig;ergew&ouml;hnlichen Werte gebraucht wird, bedeutet das, dass die &Uuml;berwachung immer aktiviert ist, solange
+         bis eine andere Einschaltbedingung, genehmigt vom Sachbearbeiter gem. Abschnitt (d)(3.1.1) eintritt. Die &Uuml;berwachungsh&auml;ufigkeit
+         eines Signals soll nicht weniger als 2 Samples pro Sekunde betragen.</li>
+         <li>"Deaktivieren" bedeutet abschalten, herunterfahren, desensibilisieren oder auf andere Weise unbrauchbar durch ein SW Programm oder andere
+         Hilfsmittel w&auml;hrend der Lebensdauer eines Fahrzeugs zu machen.</li>
+         <li>“Diagnostic or emission critical”"Diagnose- oder Emissionsrelevante" Einheiten eines Motorsteuerger&auml;ts beziehen sich auf
+         die Motor- und Getriebesteuereinheit. Ab dem Jahr 2005 schlie&szlig;t dies auch alle anderen Steuerger&auml;te ein, deren Software:
+         (1) eine direkte Kontrolle &uuml;ber die &Uuml;berwachung spezifiziert in Abschnitt (e) 1.0 bis (e) 14.0, (e) 16.0, (f) 1 bis (f) 14,
+         und (f) 16 hat oder (2) ausgenommen der ABS oder Stabilit&auml;tskontrollsysteme, eine direkte Kontrolle &uuml;ber die Diagnose von mehr
+         als zwei Komponenten hat, die f&uuml;r die &Uuml;berwachung von in Sektion (e) 15 und (f) 15 definierten Anforderungen notwendig sind.
+         Zur Bestimmung der Kriterien in (2), sollen alle Gl&uuml;hkerzen als eine Komponente gewertet werden anstatt sie einzeln zu betrachten.</li>
+         <li>"Diesel Motoren" beziehen sich auf Motoren, die die Kompressionsz&uuml;ndung im thermodynamischen Kreislauf verwenden.</li>
+         <li>Ein "Fahrzyklus" besteht aus Motorstart und Motorabschaltung sowie der Zeit bis zum n&auml;chsten Motorstart. F&uuml;r Fahrzeuge,
+         die eine Start/Stop Automatic (z.B. Motorabschaltung w&auml;hrend Leerlauf), kann der Hersteller den Sachbearbeiter bitten, eine
+         andere Definition des Fahrzykluses zu verwenden (z.B. Z&uuml;ndung an/ Z&uuml;ndung aus). Die Genehmigung h&auml;ngt davon ab, inwieweit eine
+         Gleichwertigkeit zum Motorstart und Motorabschaltung gegeben ist, die den Start und das Ende des Fahrzyklus eines konventionellen Fahrzeuges
+         widerspiegelen. F&uuml;r Systeme, die in MDV and HDV angewandt werden, kann der Hersteller die Definition f&uuml;r den Fahrzyklus aus
+         Titel 13 CCR 1971.1 anstatt der hier Genannten anwenden. Ein Motorneustart, der einer Motorabschaltung folgt, die weder vom
+         Fahrer noch von der StartStop Automatik ausgel&ouml;st wurde (z.B. Abw&uuml;rgen des Motors) soll als neuer oder fortgesetzter Fahrzyklus betrachtet werden.</li>
          <li>“Emission standard,” as it applies to OBD compliance and the remedies provided
          for in the Health and Safety Code for noncompliance, relates to the emission
          characteristics of a motor vehicle and engine and means:
@@ -861,5 +840,4 @@
 </div>
 </body>
 </html>
-
 

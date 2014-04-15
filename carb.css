@@ -42,16 +42,15 @@
         overflow: auto;
     }
     #content {
-        margin-right: 800px;
+        margin-right: 40%;
         margin-left: 155px;
     }
     #margin {
         float: right;
-        width: 845px;
+        width: 45%;
         color: white;
     }
     #footer {
         clear: both;
     }
-
 
