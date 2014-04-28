@@ -118,7 +118,7 @@
          von 310. Bei einem abweichenden Einf&uuml;hrungsplan von 40/70/80/90/100 f&uuml;r die Modelljahre 2010-2014 errechnet sich der
          Erf&uuml;llungsgrad aus 40*3+70*2+80*1+20*-1+10*-2 = 300 was aber weniger ist als 310 und damit nicht akzeptiert werden w&uuml;rde.
          </li>
-         <li>“Anwendbare Standards” beziehen sich auf die speziellen Abgasemissionen oder Gruppenemissionsgrenzwerte
+         <li>"Anwendbare Standards" beziehen sich auf die speziellen Abgasemissionen oder Gruppenemissionsgrenzwerte
          aus dem Bundestestverfahren, mit dem das Fahrzeug oder der Motor zugelassen werden. Ab dem Modeljahr 2010 sollen f&uuml;r Diesel
          Motoren, wie im Abschnitt (d)(6) festgelegt, die Anwendbaren Standards ebenfalls auf die speziellen Abgasemissionsstandards und Gruppenemissionsgrenzwerte
          aus dem Bundestestverfahren oder dem Supplemental Emission Test, mit dem der Motor zugelassen wird, bezogen werden.</li>
@@ -162,7 +162,7 @@
          eines Signals soll nicht weniger als 2 Samples pro Sekunde betragen.</li>
          <li>"Deaktivieren" bedeutet abschalten, herunterfahren, desensibilisieren oder auf andere Weise unbrauchbar durch ein SW Programm oder andere
          Hilfsmittel w&auml;hrend der Lebensdauer eines Fahrzeugs zu machen.</li>
-         <li>“Diagnostic or emission critical”"Diagnose- oder Emissionsrelevante" Einheiten eines Motorsteuerger&auml;ts beziehen sich auf
+         <li>"Diagnose- oder Emissionsrelevante" Einheiten eines Motorsteuerger&auml;ts beziehen sich auf
          die Motor- und Getriebesteuereinheit. Ab dem Jahr 2005 schlie&szlig;t dies auch alle anderen Steuerger&auml;te ein, deren Software:
          (1) eine direkte Kontrolle &uuml;ber die &Uuml;berwachung spezifiziert in Abschnitt (e) 1.0 bis (e) 14.0, (e) 16.0, (f) 1 bis (f) 14,
          und (f) 16 hat oder (2) ausgenommen der ABS oder Stabilit&auml;tskontrollsysteme, eine direkte Kontrolle &uuml;ber die Diagnose von mehr
@@ -176,271 +176,186 @@
          widerspiegelen. F&uuml;r Systeme, die in MDV and HDV angewandt werden, kann der Hersteller die Definition f&uuml;r den Fahrzyklus aus
          Titel 13 CCR 1971.1 anstatt der hier Genannten anwenden. Ein Motorneustart, der einer Motorabschaltung folgt, die weder vom
          Fahrer noch von der StartStop Automatik ausgel&ouml;st wurde (z.B. Abw&uuml;rgen des Motors) soll als neuer oder fortgesetzter Fahrzyklus betrachtet werden.</li>
-         <li>“Emission standard,” as it applies to OBD compliance and the remedies provided
-         for in the Health and Safety Code for noncompliance, relates to the emission
-         characteristics of a motor vehicle and engine and means:
-         (1) a numerical limit on the amount of a given pollutant that a motor vehicle or
-         motor vehicle engine may emit into the atmosphere; or
-         (2) a requirement that a motor vehicle or motor vehicle engine be equipped with
-         a certain type of pollution-control device or some other design feature related
-         to the control of emissions.</li>
-         <li>“Engine misfire” means lack of combustion in the cylinder due to absence of
-         spark, poor fuel metering, poor compression, or any other cause. This does not
-         include lack of combustion events in non -active cylinders due to default fuel shut-off
-         or cylinder deactivation strategies.</li>
-         <li>“Engine start” is defined as the point when the engine reaches a speed 150 rpm
-         below the normal, warmed-up idle speed (as determined in the drive position for
-         vehicles equipped with an automatic transmission). For hybrid vehicles or for
-         engines employing alternate engine start hardware or strategies (e.g., integrated
-         starter and generators, etc.), the manufacturer may request Executive Officer
-         approval to use an alternate definition for engine start (e.g., ignition key “on”).
-         Executive Officer approval of the alternate definition shall be based on equivalence
-         to an engine start for a conventional vehicle.</li>
-         <li>“Evaporative emission standards” are a subset of emission standards that refer
-         to the specific motor vehicle fuel evaporative emission standards and test
-         procedures incorporated by reference in title 13, CCR section 1976 to which a
-         vehicle is certified.</li>
-         <li>“Exhaust emission standards” or “tailpipe emission standards” are a subset of
-         emission standards that collectively refer to the specific FTP standards and SET
-         standards to which a vehicle is certified.</li>
-         <li>“Family Emission Limit (FEL)” refers to the exhaust emission levels to which an
-         engine family is certified under the averaging, banking, and trading program
-         incorporated by reference in title 13, CCR section 1956.8.</li>
-         <li>“Fault memory” means information pertaining to malfunctions stored in the
-         onboard computer, including fault codes, stored engine conditions, and MIL status.</li>
-         <li>“Federal Test Procedure (FTP) test” refers to an exhaust emission test
-         conducted according to the test procedures incorporated by reference in title 13,
-         CCR section 1961(d) that is used to determine compliance with the FTP standard to
-         which a vehicle is certified.
+         <li>Der Abgasstandard, wie er bei der OBD Konformit&auml;t angewandt wird und die angebotenen Rechtsbehelfsbelehrungen im Gesundheits- und Sicherheitscode f&uuml;r die Nichtkonformit&auml;t,
+         bezieht sich auf die Abgascharakteristik eines Fahrzeuges und Motors und bedeutet:
+         (1) Ein numerischer Grenzwert auf die Menge eines Schadstoffes, die ein Fahrzeug oder ein Motor in die Atmosph&auml;re emittiert.
+         (2) Eine Auflage, dass ein Fahrzeug oder Motor mit einem bestimmten Ger&auml;tetyp der Schadstoffkontrolle oder einem anderen Ausstattungsmerkmal f&uuml;r die Schadstoffkontolle ausger&uuml;stet sein muss.</li>
+         <li>Motorfehlz&uuml;ndung bedeutet das Ausbleiben einer Z&uuml;ndung im Zylinder aufgrund fehlenden Z&uuml;ndfunkens, zu wenig Kompressionsdruck oder anderer Gr&uuml;nde.
+         Eine Motorfehlz&uuml;ndung liegt nicht vor, wenn es sich um eine standardm&auml;&szlig;ige Kraftstoffzufuhrunterbrechung oder andere Zylinderdeaktivierungsstrategie handelt.</li>
+         <li>Der Motorstart ist dann erfolgt, wenn der Motor eine Umdrehungsgeschwindigkeit von 150rpm unterhalb dem normal
+         aufgew&auml;rmten Leerlauf(bei Automatikgetrieben entspricht das der Driving Position) hat. F&uuml;r Hybridfahrzeuge oder
+         Fahrzeuge, die eine abweichende Motorstarthardware oder -strategie haben, kann der Hersteller den Sachbearbeiter bitte,
+         eine andere Definition von Motorstart zu akzeptieren (z.B. Z&uuml;ndung ein). Die Zulassung der anderen Definition basiert auf
+         der &Auml;quivalenz eines Motorstarts f&uuml;r ein konventionelles Fahrzeug. </li>
+         <li>Kraftstoffverdunstungsstandards sind eine Untergruppe von Abgasstandards die sich auf die speziellen Kraftstoffverdunstungsstandards
+         der Fahrzeuge und Testverfahren  gem. Titel 13 CCR, mit denen Fahrzeuge zugelassen werden,  beziehen.</li>
+         <li>Auspuffabgasstandards oder Endrohrabgasstandards sind eine Untergruppe von Abgasstandards, die sich gemeinsam auf
+         die speziellen FTP und SET Standards mit denen Fahrzeuge zugelassen werden, beziehen.</li>
+         <li>Gruppenabgasgrenzwert bezieht sich auf die Abgasniveaus f&uuml;r die Motorfamilien, die unter dem Mittelwert-,
+         Finanzierungs- und Handelsprogramm, eingerichtet gem. Titel 13 Abschn. 1956.8 CCR, zugelassen wurden.</li>
+         <li>Fehlerspeicher enth&auml;lt Informationen zu dauerhaften Fehlfunktionen, wie Fehlercodes, gespeicherte Motorzust&auml;nde und MIL Status, im On Board Computer.</li>
+         <li>Bundestestverfahren (FTP) bezieht sich auf einen Abgastest, der gem. Titel 13 Abschn. 1961(d) definiert ist und
+         dazu genutzt wird, die Einhaltung der Zulassungskriterien mit den FTP Standards zu gew&auml;hrleisten.
          <dl>
          <dt>14.1</dt>
-         <dd>“FTP cycle”. For passenger vehicles, light-duty trucks, and medium-duty
-         vehicles certified on a chassis dynamometer, FTP cycle refers to the driving
-         schedule in Code of Federal Regulations (CFR) 40, Appendix 1, Part 86, section
-         (a) entitled, “EPA Urban Dynamometer Driving Schedule for Light-Duty Vehicles
-         and Light-Duty Trucks.” For medium-duty engines certified on an engine
-         dynamometer, FTP cycle refers to the engine dynamometer schedule in CFR 40,
-         Appendix 1, Part 86, section (f)(1), entitled, “EPA Engine Dynamometer
-         Schedule for Heavy-Duty Otto-Cycle Engines,” or section (f)(2), entitled, “EPA
-         Engine Dynamometer Schedule for Heavy-Duty Diesel Engines.”</dd>
+         <dd>FTP Fahrzyklus F&uuml;r Personenw&auml;gen, LDT und MDT die am Fahrgestellpr&uuml;fstand zugelassen werden, stellt der FTP
+         Fahrzyklus ein Fahrprofil, abgeleitet aus dem Fahrprofil CFR 40, Appendix 1 Part 86, Abschnitt (a) mit dem Titel
+         EPA Urban Pr&uuml;fstandsfahrprofil f&uuml;r LDT und LDV, dar. F&uuml;r MD Motoren,  zugelassen auf einem Pr&uuml;fstand, bezieht sich
+         der FTP Zyklus auf ein Motorpr&uuml;fstandsprofil gem. CFR 40, Appendix 1, Part 86 Abschnitt (f)(1) mit dem Titel EPA Engine
+         Dynamometer Schedule for HD Otto-Motoren oder Abschnitt (f)(2) mit dem Titel EPA Engine Dynamometer Schedule f&uuml;r HD Diesel-Motoren.</dd>
          </dl>
          <dl>
          <dt>14.2</dt>
-         <dd>“FTP standard” refers to the certification tailpipe exhaust emission full useful
-         life standards and test procedures applicable to the FTP cycle and to the class to
-         which the vehicle is certified.</dd>
+         <dd>FTP Standard bezieht sich auf die Full Useful Life Auspuffabgas Standards Zertifizierung und Testverfahren,
+         die beim FTP Zyklus angewandt werden und f&uuml;r die das Fahrzeug zugelassen ist.</dd>
          </dl>
          <dl>
          <dt>14.3</dt>
-         <dd>“FTP full useful life standard” refers to the FTP standard applicable when the
-         vehicle reaches the end of its full useful life as defined in the certification
-         requirements and test procedures incorporated by reference in title 13, CCR
-         section 1961(d).</dd>
+         <dd>FTP full useful life standard bezieht sich auf den FTP Standard, wenn das Fahrzeug seine Betriebszeit,
+         definiert in den Zulassungsunterlagen und Testverfahren gem. Titel 13 CCR Abschn. 1961(d), erreicht hat.</dd>
          </dl>
          </li>
-         <li>“Fuel trim” refers to feedback adjustments to the base fuel schedule. Short -term
-         fuel trim refers to dynamic or instantaneous adjustments. Long -term fuel trim refers
-         to much more gradual adjustments to the fuel calibration schedule than short-term
-         trim adjustments.</li>
-         <li>“Fueled engine operation” is the state where any fuel is introduced into the
-         engine for the purpose of combustion.</li>
-         <li>“Functional check” for an output component or system means verification of
-         proper response of the component and system to a computer command.</li>
-         <li>“Gasoline engine” refers to an Otto-cycle engine or an alternate-fueled engine.</li>
-         <li>“Hybrid vehicle” refers to a vehicle (including a plug-in hybrid electric vehicle) that
+         <li>Mit der Kraftstoffsteuerung werden Anpassungen an die Basiskraftstoffplanung &uuml;ber einen Regelkreis vorgenommen.
+         Kurzfristige Kraftstoffanpassungen werden dynamisch oder sofort vorgenommen.
+         Dauerhafte Kraftstoffanpassungen werden eher allm&auml;hlich an dem Kraftstoffsteuerungsplan vorgenommen.</li>
+         <li>Kraftstoffgetriebener Motorbetrieb ist der Zustand, wenn Kraftstoff f&uuml;r Z&uuml;ndzwecke im Motor vorhanden ist.</li>
+         <li>Funktionscheck f&uuml;r ein Ausgabeger&auml;t oder -system hat die Verifikation der korrekten R&uuml;ckmeldung des Ger&auml;tes gegen&uuml;ber einem Programmbefehl zur Aufgabe.</li>
+         <li>Bezinmotor ist ein Otto-Motor oder ein Biobrennstoffbetriebener Motor. </li>
+         <li>"Hybrid vehicle" refers to a vehicle (including a plug-in hybrid electric vehicle) that
          can draw propulsion energy from either or both of the following on-vehicle sources
          of stored energy: 1) a consumable fuel and 2) an energy storage device such as a
          battery, capacitor, or flywheel.</li>
-         <li>“Keep-alive memory (KAM),” for the purposes of this regulation, is defined as a
-         type of memory that retains its contents as long as power is provided to the on board control unit. KAM is not erased upon shutting off the engine but may be
-         erased if power to the on-board control unit is interrupted (e.g., vehicle battery
-         disconnected, fuse to control unit removed). In some cases, portions of KAM may
-         be erased with a scan tool command to reset KAM.</li>
-         <li>“Key on, engine off position” refers to a vehicle with the ignition key in the engine
-         run position (not engine crank or accessory position) but with the engine not
-         running.</li>
-         <li>“Light-duty truck” is defined in title 13, CCR section 1900 (b).</li>
-         <li>“Low Emission Vehicle I application” refers to a vehicle or engine certified in
-         California to the exhaust emission standards defined in title 13, CCR sections
-         1956.8(g), 1960.1(g)(1), and 1960.1(h)(1) for any of the following vehicle emission
-         categories: Transitional Low Emission Vehicle (TLEV), Low Emission Vehicle (LEV),
-         Ultra Low Emission Vehicle (ULEV), or Super Ultra Low Emission Vehicle (SULEV).
-         Additionally, vehicles certified to Federal emission standards (bins) in California but
-         categorized in a Low Emission Vehicle I vehicle emission category for purposes of
-         calculating NMOG fleet average in accordance with the certification requirements
-         and test procedures incorporated by reference in title 13, CCR section 1961 (d) are
-         subject to all monitoring requirements applicable to Low Emission Vehicle I
-         applications but shall use the Federal tailpipe emission standard (i.e., the Federal
-         bin) for purposes of determining the malfunction thresholds in sections (e) and (f).
+         <li>Beibehaltungsspeicher ist f&uuml;r die Zwecke der Gesetzgebung ein Speicher, der seinen Inhalt beibeh&auml;lt solange die
+         Energiezufuhr zur On-Board Steuereinheit nicht unterbrochen ist. KAM wird nicht gel&ouml;scht, wenn der Motor abgestellt wird,
+         k&ouml;nnte aber gel&ouml;scht werden, wenn die Batterie abgeklemmt oder die Sicherung zur Steuereinheit entfernt wird. Eine teilweise
+         Speicherl&ouml;schung kann auch durch das Scan Tool erfolgen.</li>
+         <li>Z&uuml;ndung ein, Motor aus Position wird ein Zustand bezeichnet, bei dem die Z&uuml;ndung eingeschaltet ist, aber der Motor nicht l&auml;uft. </li>
+         <li>Light Duty Truck ist definiert in Titel 13 CCR Abschnitt 1900(b)</li>
+         <li>Die Low Emission Vehicle I Klasse beinhaltet Fahrzeuge und Motoren, die im Rahmen der Abgasemissionsstandards gem. Titel 13
+         Abschnitt 1956.8(g), 1960.1(g)(1) und 1960.1(h)(1) und f&uuml;r jede der folgenden Fahrzeugemissionsklassen zugelassen sind:
+         Transitional low emission Fahrzeug (TLEV), Low emission Fahrzeug (LEV), Ultra low emission Fahrzeug (ULEV) oder Super ultra low
+         emission Fahrzeug. Zus&auml;tzlich unterliegen Fahrzeuge, die gem. Bundesemissionsstandards zugelassen sind, aber wegen der NMOG
+         Flottendurchschnittsberechnung im Einklang mit der Regelung Titel 13, CCR Abschnitt 1961(d) einer Low emission vehicle I Kategorie
+         zugeordnet sind, allen &Uuml;berwachungskriterien, die dieser Low emission vehicle I Kategorie entsprechen. Sie sollen aber die
+         Bundesauspuffabgasstandards verwenden, um die Fehlfunktionsgrenzwerte in Abschnitt (e) und (f) zu bestimmen.
          <dl>
          <dt>29.1</dt>
-         <dd>“MDV SULEV vehicles” refer only to medium-duty Low Emission Vehicle I
-         applications certified to the SULEV vehicle emission category.</dd>
+         <dd>MDV SULEV sind zugelassene Fahrzeuge, die zur Unterkategorie SULEV der medium-duty Low emission vehicle I Klasse geh&ouml;ren.</dd>
          </dl>
          <dl>
          <dt>29.2</dt>
-         <dd>“TLEV vehicles” refer only to Low Emission Vehicle I applications certified to
-         the TLEV vehicle emission category.</dd>
+         <dd>TLEV vehicles sind zugelassene Fahrzeuge, die zur Unterkategorie TLEV der Low emission vehicle I Klasse geh&ouml;ren.</dd>
          </dl>
          <dl>
          <dt>29.3</dt>
-         <dd>“LEV vehicles” refer only to Low Emission Vehicle I applications certified to
-         the LEV vehicle emission category.</dd>
+         <dd>LEV vehicles sind zugelassene Fahrzeuge, die zur Unterkategorie LEV der Low emission vehicle I Klasse geh&ouml;ren.</dd>
          </dl>
          <dl>
          <dt>29.4</dt>
-         <dd>“ULEV vehicles” refer only to Low Emission Vehicle I applications certified to
-         the ULEV vehicle emission category.</dd>
+         <dd>ULEV vehicles sind zugelassene Fahrzeuge, die zur Unterkategorie ULEV der Low emission vehicle I Klasse geh&ouml;ren.</dd>
          </dl>
          </li>
-         <li>“Low Emission Vehicle II application” refers to a vehicle or engine certified in
-         California to the exhaust emission standards defined in title 13, CCR section 1961,
-         or optionally certified to the exhaust emission standards defined in title 13, CCR
-         section 1956.8, for any of the following emission categories: LEV, ULEV, or SULEV.
-         Additionally, except as provided for in sections (e)(17.1.3) and (f)(17.1.2), vehicles
-         certified to Federal emission standards (bins) in California but categorized in a Low
-         Emission Vehicle II vehicle emission category for purposes of calculating NMOG
-         fleet average in accordance with the certification requirements and test procedures
-         incorporated by reference in title 13, CCR section 1961 (d) are subject to all
-         monitoring requirements applicable to Low Emission Vehicle II applications but shall
-         use the Federal tailpipe emission standard (i.e., the Federal bin) for purposes of
-         determining the malfunction thresholds in sections (e) and (f).
+         <li>Die Low emission vehicle II Klasse beinhaltet Fahrzeuge oder Motoren, die gem. Abgasemissionsstandards in Titel 13
+         Abschnitt 1961 oder wahlweise gem. Abgasemissionsstandards in Titel 13 Abschnitt 1956.8 zugelassen sind und irgendeiner
+         der folgenden Emissionskategorie zugeordnet werden k&ouml;nnen. Zus&auml;tzlich unterliegen Fahrzeuge (ausgenommen die in Abschnitt
+         (e)(17.1.3) und (f)(17.1.2) benannten), die gem. Bundesemissionsstandards zugelassen sind, aber wegen der NMOG Flottendurchschnittsberechnung
+         im Einklang mit der Regelung Titel 13, CCR Abschnitt 1961(d) einer Low emission vehicle I Kategorie zugeordnet sind, allen
+         &Uuml;berwachungskriterien, die dieser Low emission vehicle I Kategorie entsprechen. Sie sollen aber die Bundesauspuffabgasstandards
+         verwenden, um die Fehlfunktionsgrenzwerte in Abschnitt (e) und (f) zu bestimmen.
          <dl>
          <dt>30.1</dt>
-         <dd>“PC/LDT SULEV II vehicles” refer only to passenger car and light-duty truck
-         Low Emission Vehicle II applications certified to the SULEV vehicle emission
-         category.</dd>
+         <dd>PC/LDT SULEV II sind zugelassene Fahrzeuge, die zur Unterkategorie SULEV der medium-duty Low emission vehicle II Klasse geh&ouml;ren.</dd>
          </dl>
          <dl>
          <dt>30.2</dt>
-         <dd>“MDV SULEV II vehicles” refer only to medium-duty Low Emission Vehicle II
-         applications certified to the SULEV vehicle emission category.</dd>
+         <dd>MDV SULEV II vehicles sind zugelassene Fahrzeuge, die zur Unterkategorie SULEV der Low emission vehicle II Klasse geh&ouml;ren.</dd>
          </dl>
          <dl>
          <dt>30.3</dt>
-         <dd>“LEV II vehicles” refer only to Low Emission Vehicle II applications certified to
-         the LEV vehicle emission category.</dd>
+         <dd>LEV II vehicles sind zugelassene Fahrzeuge, die zur Unterkategorie LEV der Low emission vehicle II Klasse geh&ouml;ren.</dd>
          </dl>
          <dl>
          <dt>30.4</dt>
-         <dd>“ULEV II vehicles” refer only to Low Emission Vehicle II applications certified
-         to the ULEV vehicle emission category.</dd>
+         <dd>ULEV II vehicles sind zugelassene Fahrzeuge, die zur Unterkategorie ULEV der Low emission vehicle II Klasse geh&ouml;ren.</dd>
          </dl>
          </li>
-         <li>“Malfunction” means any deterioration or failure of a component that causes the
-         performance to be outside of the applicable limits in sections (e) and (f).</li>
-         <li>“Medium -duty vehicle” is defined in title 13, CCR section 1900 (b).</li>
-         <li>“Medium-duty passenger vehicle” or “MDPV” is defined in Title 40, Section
-         86.1803-01, Code of Federal Regulations.</li>
+         <li>Fehlfunktion bedeutet jegliche Abweichung oder Fehler eines Ger&auml;tes, welcher dazu f&uuml;hrt, dass die Grenzwerte
+         definiert in Abschnitt (e) und (f) nicht mehr eingehalten werden k&ouml;nnen.</li>
+         <li>MDV wird definiert in Titel 13 Abschnitt 1900(b).</li>
+         <li>MDPV wird definiert in Titel 40 Abschnitt 86.1803-01 CFR.</li>
          </li>
-         <li>“Normal production” is the time after the start of production when the manufacturer
-         has produced 2% of the projected volume for the test group or calibration,
-         whichever is being evaluated in accordance with section (j).</li>
-         <li>“Non-volatile random access memory (NVRAM),” for the purposes of this
-         regulation, is defined as a type of memory that retains its contents  even when power
-         to the on-board control unit is interrupted (e.g., vehicle battery disconnected, fuse to
-         control unit removed). NVRAM is typically made non-volatile either by use of a
-         back-up battery within the control unit or through the use of an electrically erasable
-         and programmable read-only memory (EEPROM) chip.</li>
-         <li>“Not-To-Exceed (NTE) control area” refers to the bounded region of the engine’s
-         torque and speed map, as defined in 40 CFR 86.1370 -2007, where emissions must
-         not exceed a specific emission cap for a given pollutant under the NTE requirement.
-         “Manufacturer-specific NOx NTE carve-out area” refers to regions within the
-         NTE control area for NOx where the manufacturer has limited NTE testing as
-         allowed by 40 CFR 86.1370-2007(b)(7).
-         “Manufacturer-specific PM NTE carve-out area” refers to regions within the
+         <li>Normale Produktion ist die Zeitspanne nach dem SOP zu der der Hersteller 2% der prognostizierten Verkaufszahlen
+         einer Testgruppe produziert hat. Die Auswertung geschieht gem. Abschnitt (j).</li>
+         <li>Nicht &auml;nderbarer RAM ist im Rahmen dieser Gesetzgebung ein Speicher, der seinen Inhalt auch dann nicht verliert,
+         wenn die Energieversorgung zur On-Board Steuereinheit unterbrochen wird (z.B. wenn die Batterie abgeklemmt oder die
+         Sicherung herausgenommen wird). NVRAM werden dadurch speicherpersistent indem eine Backup Batterie oder ein EPROM verwendet wird.</li>
+         <li>Eingegrenzter Kontrollbereich bezieht sich auf einen definierten Bereich der Drehmoment Geschwindigkeitskennlinie
+         des Motors, wie sie in 40 CFR 86.1370-2007 festgelegt  ist.
+         Die Emissionen d&uuml;rfen in diesem Bereich einen bestimmten Schadstoffwert vorgegeben vom NTE nicht &uuml;berschreiten.
+         "Manufacturer-specific PM NTE carve-out area" refers to regions within the
          NTE control area for PM where the manufacturer has limited NTE testing as
          allowed by 40 CFR 86.1370-2007(b)(7).
-         “NTE deficiency” refers to regions or conditions within the NTE control area
+         "NTE deficiency" refers to regions or conditions within the NTE control area
          for NOx or PM where the manufacturer has received a deficiency as allowed by
          40 CFR 86.007-11(a)(4)(iv).
-         “Normal production” is the time after the start of production when the
+         "Normal production" is the time after the start of production when the
          manufacturer has produced two percent of the projected volume for the test group
          or calibration, whichever is being evaluated in accordance with section (j).</li>
-         <li>“Passenger car” is defined in title 13, CCR section 1900 (b).</li>
-         <li>“Pending fault code” is defined as the diagnostic trouble code stored upon the
-         initial detection of a malfunction (e.g., t ypically on a single driving cycle) prior to
-         illumination of the MIL in accordance with the requirements of section s (e), (f), and
-         (g)(4.4).</li>
-         <li>“Percentage of misfire” as used in (e)(3.2) and (f)(3.2) means the percentage of
-         misfires out of the total number of firing events for the specified interval.</li>
-         <li>“Permanent fault code” is defined as a confirmed fault code that is currently
-         commanding the MIL on and is stored in NVRAM as specified in sections (d)(2) and
-         (g)(4.4).</li>
-         <li>“Plug-in hybrid electric vehicle” refers to a hybrid vehicle that has the capability to
-         charge a battery from an off-vehicle electric energy source that cannot be connected
-         or coupled to the vehicle in any manner while the vehicle is being driven.</li>
-         <li>“Power Take-Off (PTO) unit” refers to an engine driven output provision for the
-         purposes of powering auxiliary equipment (e.g., a dump-truck bed, aerial bucket, or
-         tow-truck winch).</li>
-         <li>“Propulsion system active” is the state where the powertrain (e.g., engine,
-         electric machine) is enabled by the driver (e.g., after ignition on for conventional
-         vehicles, after power button pushed for some hybrid vehicles, after remote start
-         activation) such that the vehicle is ready to be used (e.g., vehicle is ready to be
-         driven, ready to be shifted from “park” to “drive”, heating, ventilation, and air
-         conditioning (HVAC) turned on to condition cabin prior to driving). For purposes of
-         this definition, “the state where the powertrain is enabled” does not include
-         activations that are not driver-initiated (e.g., conditions where portions of the vehicle
-         system wake up to perform OBD II monitoring or off-board charging).</li>
-         <li>“Rationality fault diagnostic” for an input component means verification of the
-         accuracy of the input signal while in the range of normal operation and when
-         compared to all other available information.</li>
-         <li>“Redline engine speed” shall be defined by the manufacturer as either the
-         recommended maximum engine speed as normally displayed on instrument panel
-         tachometers or the engine speed at which fuel shutoff occurs.</li>
-         <li>“Response rate” for exhaust gas sensors refers to the delay  from when the
-         sensor is exposed to a different make-up of exhaust gas constituents until it outputs
-         a signal reflecting the different make-up of exhaust gas constituents. For example,
-         for oxygen sensors, response rate is the delay from when the oxygen sensor is
-         exposed to a change in exhaust gas from richer/leaner than stoichiometric to
-         leaner/richer than stoichiometric to the time when the oxygen sensor indicates the
-         lean/rich condition. Similarly, for wide-range air-fuel (A/F) sensors, response rate is
-         the delay from when the sensor is exposed to a different A/F ratio to the time it
-         indicates the different A/F ratio. For NOx and PM sensors, response rate is the
-         delay from when the sensor is exposed to a different NOx or PM exhaust gas level
-         until it indicates the different NOx or PM exhaust gas level.</li>
-         <li>“SC03 emission standards” refers to the certification tailpipe exhaust emission
-         standards for the air conditioning (A/C) test of the Supplemental Federal Test
-         Procedure Off-Cycle Emission Standards specified in title 13, CCR section 1961(a)
-         applicable to the class to which the vehicle is certified.</li>
-         <li>“Secondary air” refers to air introduced into the exhaust system by means of a
-         pump or aspirator valve or other means that is intended to aid in the oxidation of HC
-         and CO contained in the exhaust gas stream.</li>
-         <li>“Similar conditions” as used in sections (e)(3), (e)(6), (f)(3), and (f)(4) means
-         engine conditions having an engine speed within 375 rpm, load conditions within 20
-         percent, and the same warm-up status (i.e., cold or hot) as the engine conditions
-         stored pursuant to (e)(3.4.4), (e)(6.4.5), (f)(3.4.2)(C), and (f)(4.4.2)(E). The
-         Executive Officer may approve other definitions of similar conditions based on
-         comparable timeliness and reliability in detecting similar engine operation.</li>
-         <li>“Small volume manufacturer” is defined in title 13, CCR section 1900(b).
-         However, for a manufacturer that transitions from a small volume manufacturer to a
-         non-small volume manufacturer, the manufacturer is still considered a small volume
-         manufacturer for the first three model years that it no longer meets the definition in
-         title 13, CCR section 1900(b).</li>
-         <li>“Supplemental Emission Test (SET) cycle” refers to the driving schedule defined
-         as the “supplemental steady state emission test” in 40 CFR 86.1360-2007, as
-         amended July 13, 2005.</li>
-         <li>“SET standard” refers to the certification exhaust emission standards and test
-         procedures applicable to the SET cycle incorporated by reference in title 13, CCR
-         sections 1956.8(b) and (d) to which the engine is certified.</li>
-         <li>“Unified cycle” is defined in “Speed Versus Time Data for California’s Unified
-         Driving Cycle”, dated December 12, 1996, incorporated by reference.</li>
-         <li>“US06 cycle” refers to the driving schedule in 40 CFR 86, Appendix 1, section
-         (g), as amended July 13, 2005, entitled, “EPA US06 Driving Schedule for Light-Duty
-         Vehicles and Light-Duty Trucks.”</li>
-         <li>“Warm-up cycle” means a driving cycle with sufficient vehicle operation such that
-         the coolant temperature has risen by at least 40 degrees Fahrenheit from engine
-         starting and reaches a minimum temperature of at least 160 degrees Fahrenheit
-         (140 degrees Fahrenheit for applications with diesel engines).  Alternatively,
-         manufacturers may define warm-up cycle as a driving cycle with vehicle operation in
-         which the criteria specified in sections (d)(2.5.2)(B)(iii)a., b., and c. are met.</li>
+         <li>Personenwagen ist definiert in Titel 13 Abschnitt 1900(b)</li>
+         <li>Ein vor&uuml;bergehender Fehlercode wird bei einer zum ersten Mal auftretenden Fehlfunktion (typisch bei einem einfachen
+         Fahrzyklus) noch bevor die MIL aufleuchtet gem. Abschnitt (e) , (f), und (g)(4.4) gespeichert.</li>
+         <li>Das Fehlz&uuml;ndungsauftreten wird gem. (e)(3.2) und (f)(3.2) als Prozentsatz festgelegt, der die Fehlz&uuml;ndungen in das
+         Verh&auml;ltnis zu allen Z&uuml;ndungen in einem Zeitraum setzt.</li>
+         <li>Ein andauernder Fehlercode ist ein Fehlercode, der die MIL ausl&ouml;st und gem. Abschnitt (d)(2) und (g)(4.4) im NVRAM
+         gespeichert wird.</li>
+         <li>Als Plug-in hybrid Elektrofahrzeuge werden Fahrzeuge bezeichnet, die die M&ouml;glichkeit haben, ihre Batterie extern
+         zu laden ohne dass das Fahrzeug dabei in Bewegung ist.</li>
+         <li>Energieanschluss Einheit bezieht sich auf eine Motorbetriebene Energieversorgung, die zus&auml;tzliche Ger&auml;tschaften
+         wie z.B. die Kipplasterwanne, Abschleppfahrzeugwinde mit Energie versorgen.</li>
+         <li>Aktives Antriebsregelungssystem ist dann gegeben, wenn der Antriebsstrang (z.B. Motor oder Generator) vom Fahrer
+         eingeschaltet werden (z.B. nach Einschalten der Z&uuml;ndung bei konventionellen Fahrzeugen oder dem Start Knopf bei Hybriden)
+         so dass das Fahrzeug fahrbereit ist (z.B. Fahrbereitschaft, bereit um in die Fahrposition geschalten zu werden, Heizung,
+         K&uuml;hlung und Klimaanlage sind in Betrieb um den Fahrerraum in gew&uuml;nschten Zustand vor dem Start zu bringen). Zum Zwecke
+         dieser Definition werden Zust&auml;nde, die den Antriebsstrang initialisieren nur dann gewertet, wenn sie vom Fahrer ausgehen
+         z.B. Zust&auml;nde die dazu f&uuml;hren, dass OBD II &Uuml;berwachung gestartet wird oder externes Laden.</li>
+         <li>Plausible Fehlerdiagnose f&uuml;r ein Eingabeger&auml;t bedeutet die Verifikation der Korrektheit des Eingangsignals anhand
+         des normalen Arbeitsbereichs oder wenn dieses mit anderen Informationen abgeglichen wird.</li>
+         <li>Grenzmotorgeschwindigkeit wird vom Hersteller definiert als die maximale Motorgeschwindigkeit die im Display
+         angezeigt wird oder als Motorgeschwindigkeit bei der die Kraftstoffeinspritzung abgeschalten wird.</li>
+         <li>Antwortrate f&uuml;r Abgassensoren bezieht sich auf die Verz&ouml;gerung die auftritt, wenn der Sensor einer Ver&auml;nderung
+         der Abgaszusammensetzung ausgesetzt ist bis zu dem Zeitpunkt der Erkennung der Ver&auml;nderung. Zum Beispiel f&uuml;r Lamdasonden,
+         definiert sich die Antwortrate als Zeitspanne bei der der Sensor einem fettem/armen Gemisch ausgehend von einem armen/fettem
+         Gemisch ausgesetzt ist. &Auml;hnlich verh&auml;lt es sich bei dem Benzin-/Luftgemischsensor. </li>
+         <li>SC03 Abgasstandards beziehen sich auf die Auspuffabgasstandards f&uuml;r die Klimaanlagentest des erg&auml;nzenden FTP Off-Cycle
+          Emission Standards, definiert in Titel 13 CCR Abschnitt 1961(a) f&uuml;r die das Fahrzeug zuzulassende Klasse.</li>
+         <li>Die Zweitluft wird in den Abgaskreis mit einer Pumpe oder mit einem Absaugger&auml;teventil oder anderen Ger&auml;ten eingef&uuml;hrt
+         um die Oxidation von HC und CO zu unterst&uuml;tzen. </li>
+         <li>&Auml;hnliche Bedingungen wie sie in Abschnitt (e)(3), (e)(6), (f)(3) und (f)(4) genannt sind, weisen eine Motorgeschwindigkeit
+         von 375rpm, ein 20%iges Lastmoment und eine gleiche Aufw&auml;rmung wie sie ein Motor gem. (e)(3.4.4), (e)(6.4.5), (f)(3.4.2) und
+         (f)(4.4.2)(E)aufweist, auf. Der Sachbearbeiter k&ouml;nnte andere Definitionen zulassen, wenn ein &auml;hnlicher Zustand, basierend auf
+         vergleichbaren Zeitschienen und zuverl&auml;ssige Detektion &auml;hnlicher Motorzust&auml;nde, vorliegt.</li>
+         <li>Kleinserienhersteller sind in Abschnitt 1900(b) Titel 13 definiert. Wenn ein Hersteller von einem Kleinserienhersteller
+         zu einem Nicht-Kleinserienhersteller konvertiert, gilt die Bezeichnung Kleinserienhersteller weiter drei Jahre nachdem die
+         Kriterien f&uuml;r einen Kleinserienhersteller nach Abschnitt 1900(b) nicht mehr zutreffen. </li>
+         <li>Erg&auml;nzender Abgastestzyklus SET bezieht sich auf das Fahrprofil definiert im erg&auml;nzenden Dauerzustandsemissionstest
+         gem. 40 CFR 86.1360-2007 hinzugef&uuml;gt im Juli 2005.</li>
+         <li>SET Standard bezieht sich auf Abgasstandardzertifizierung und Testverfahren die beim SET Zyklus gem. Titel 13
+         Abschnitt 1956.8(b) und (d) Motozulassung Anwendung finden.</li>
+         <li>"Unified cycle" is defined in "Speed Versus Time Data for California’s Unified
+         Driving Cycle", dated December 12, 1996, incorporated by reference.</li>
+         <li>US06 Zyklus bezieht sich auf das Fahrprofil in 40 CFR 86, Appendix 1, Abschnitt (g) hinzugef&uuml;gt im Juli 2005 mit
+         dem Titel EPA US06 Driving Schedule for LDT and LDV</li>
+         <li>Als "Aufw&auml;rmzyklus" bezeichnet man einen Fahrzyklus mit ausreichender Fahrleistung, so dass die K&uuml;hlmitteltemperatur
+          um 40 Grad Fahrenheit seit Motorstart gestiegen ist und dabei eine Mindesttemperatur von 160 Grad Fahrenheit
+          (140 Grad Fahrenheit bei Dieselmotoren) erreicht ist. Alternativ k&ouml;nnen Hersteller einen Aufw&auml;rmzyklus definieren
+          in welchem die Kriterien aus Abschnitt (d)(2.5.2)(B)(iii)a., b. und c. erf&uuml;llt sind. </li>
          </ol>
 </div>
   <div id="content">
          <ol type=1>
-         <li>“Actual life” refers to the entire period that a vehicle is operated on public roads
+         <li>"Actual life" refers to the entire period that a vehicle is operated on public roads
          in California up to the time a vehicle is retired from use.</li>
-         <li>“Alternate phase-in” is a phase-in schedule that achieves equivalent compliance
+         <li>"Alternate phase-in" is a phase-in schedule that achieves equivalent compliance
          volume by the end of the last year of a scheduled phase-in provided in this
          regulation. The compliance volume is the number calculated by multiplying the
          percent of vehicles (based on the manufacturer’s projected sales volume of all
@@ -489,15 +404,15 @@
          compliance volume calculation would be (40*3 years) + (70*2 years) + (80*1
          year) + (20*(-1 year)) + (10*(-2 years)) = 300, which is less than 310 and
          therefore would not be acceptable as an alternate phase-in schedule.</li>
-         <li>“Applicable standards” refers to the specific exhaust emission standards or
+         <li>"Applicable standards" refers to the specific exhaust emission standards or
          family emission limits (FEL) of the Federal Test Procedure (FTP) to which the
          vehicle or engine is certified. For 2010 and subsequent model year diesel engines,
-         “applicable standards” shall also refer to the specific exhaust emission standards or
+         "applicable standards" shall also refer to the specific exhaust emission standards or
          family emission limits (FEL) of either the FTP or the Supplemental Emission Test
          (SET) to which the engine is certified, as determined according to section (d)(6).</li>
-         <li>“Auxiliary Emission Control Device (AECD)” refers to any approved AECD (as
+         <li>"Auxiliary Emission Control Device (AECD)" refers to any approved AECD (as
          defined by 40 Code of Federal Regulations (CFR) 86.082-2 and 86.094-2).
-         “Emission Increasing Auxiliary Emission Control Device (EI-AECD)” refers to
+         "Emission Increasing Auxiliary Emission Control Device (EI-AECD)" refers to
          any approved AECD that: reduces the effectiveness of the emission control
          system under conditions which may reasonably be expected to be encountered
          in normal vehicle operation and use;  and the need for the AECD is justified in
@@ -522,10 +437,10 @@
          <dt>(6)</dt>
          <dd>execution of an infrequent regeneration event</dd>
          </dl></li>
-         <li>“Base fuel schedule” refers to the fuel calibration schedule programmed into the
+         <li>"Base fuel schedule" refers to the fuel calibration schedule programmed into the
          Powertrain Control Module or PROM when manufactured or when updated by some
          off-board source, prior to any learned on-board correction.</li>
-         <li>“Calculated load value” refers to an indication of the percent engine capacity that
+         <li>"Calculated load value" refers to an indication of the percent engine capacity that
          is being used and is defined in Society of Automotive Engineers (SAE) J 1979 "E/E
          Diagnostic Test Modes", (SAE J1979), incorporated by reference (section (g)(1.4)
          1
@@ -533,13 +448,13 @@
          For diesel applications, in lieu of the definition in SAE J1979,  the calculated load
          value may alternatively be determined by the ratio of current output torque to
          maximum output torque at current engine speed as defined by suspect parameter
-         number (SPN) 92 of SAE J1939 “Recommended Practice for a Serial Control and
-         Communications Vehicle Network” (SAE J1939), incorporated by reference.</li>
-         <li>“Confirmed fault code” is defined as the diagnostic trouble code stored when an
+         number (SPN) 92 of SAE J1939 "Recommended Practice for a Serial Control and
+         Communications Vehicle Network" (SAE J1939), incorporated by reference.</li>
+         <li>"Confirmed fault code" is defined as the diagnostic trouble code stored when an
          OBD II system has confirmed that a malfunction exists (e.g., typically on the second
          driving cycle that the malfunction is detected) in accordance with the requirements
          of sections (e), (f), and (g)(4.4).</li>
-         <li>“Continuously,” if used in the context of monitoring conditions for circu it
+         <li>"Continuously," if used in the context of monitoring conditions for circu it
          continuity, lack of circuit continuity, circuit faults, and out-of-range values, means
          monitoring is always enabled, unless alternate enable conditions have been
          approved by the Executive Officer in accordance with section (d)(3.1.1), and
@@ -547,21 +462,21 @@
          per second. If for control purposes, a computer input component is sampled less
          frequently, the signal of the component may instead be evaluated each time
          sampling occurs.</li>
-         <li>“Deactivate” means to turn-off, shutdown, desensitize, or otherwise make
+         <li>"Deactivate" means to turn-off, shutdown, desensitize, or otherwise make
          inoperable through software programming or other means during the actual life of
          the vehicle.</li>
-         <li>“Diagnostic or emission critical” electronic powertrain control unit refers to the
+         <li>"Diagnostic or emission critical" electronic powertrain control unit refers to the
          engine and transmission control unit(s). For the 2005 and subsequent model years,it also includes any other on-board electronic powertrain control unit containing
          software that: (1) has primary control over any of the monitors required by sections
          (e)(1.0) through (e)(14.0), (e)(16.0), (f)(1) through (f)(14), and (f)(16) or, (2)
          excluding anti-lock brake system (ABS) control units or stability/traction control  units,
          has primary control over the diagnostics for more than two of the components
          required to be monitored by sections (e)(15.0) and (f)(15).  For purposes of criterion
-         (2) above, all glow plugs in an engine shall be considered “one” component in lieu of
+         (2) above, all glow plugs in an engine shall be considered "one" component in lieu of
          each glow plug being considered a separate component.</li>
-         <li>“Diesel engines” refers to engines using a compression ignition thermodynamic
+         <li>"Diesel engines" refers to engines using a compression ignition thermodynamic
          cycle.</li>
-         <li>“Driving cycle” consists of engine startup and engine shutoff and includes the
+         <li>"Driving cycle" consists of engine startup and engine shutoff and includes the
          period of engine off time up to the next engine startup. For vehicles that employ
          engine shutoff strategies (e.g., engine shutoff at idle), the manufacturer may request
          Executive Officer approval to use an alternate definition for driving cycle (e.g., key
@@ -574,7 +489,7 @@
          the vehicle operator nor by the engine control strategy but caused by an event such
          as an engine stall may be considered a new driving cycle or a continuation of the
          existing driving cycle.</li>
-         <li>“Emission standard,” as it applies to OBD compliance and the remedies provided
+         <li>"Emission standard," as it applies to OBD compliance and the remedies provided
          for in the Health and Safety Code for noncompliance, relates to the emission
          characteristics of a motor vehicle and engine and means:
          (1) a numerical limit on the amount of a given pollutant that a motor vehicle or
@@ -582,83 +497,83 @@
          (2) a requirement that a motor vehicle or motor vehicle engine be equipped with
          a certain type of pollution-control device or some other design feature related
          to the control of emissions.</li>
-         <li>“Engine misfire” means lack of combustion in the cylinder due to absence of
+         <li>"Engine misfire" means lack of combustion in the cylinder due to absence of
          spark, poor fuel metering, poor compression, or any other cause. This does not
          include lack of combustion events in non -active cylinders due to default fuel shut-off
          or cylinder deactivation strategies.</li>
-         <li>“Engine start” is defined as the point when the engine reaches a speed 150 rpm
+         <li>"Engine start" is defined as the point when the engine reaches a speed 150 rpm
          below the normal, warmed-up idle speed (as determined in the drive position for
          vehicles equipped with an automatic transmission). For hybrid vehicles or for
          engines employing alternate engine start hardware or strategies (e.g., integrated
          starter and generators, etc.), the manufacturer may request Executive Officer
-         approval to use an alternate definition for engine start (e.g., ignition key “on”).
+         approval to use an alternate definition for engine start (e.g., ignition key "on").
          Executive Officer approval of the alternate definition shall be based on equivalence
          to an engine start for a conventional vehicle.</li>
-         <li>“Evaporative emission standards” are a subset of emission standards that refer
+         <li>"Evaporative emission standards" are a subset of emission standards that refer
          to the specific motor vehicle fuel evaporative emission standards and test
          procedures incorporated by reference in title 13, CCR section 1976 to which a
          vehicle is certified.</li>
-         <li>“Exhaust emission standards” or “tailpipe emission standards” are a subset of
+         <li>"Exhaust emission standards" or "tailpipe emission standards" are a subset of
          emission standards that collectively refer to the specific FTP standards and SET
          standards to which a vehicle is certified.</li>
-         <li>“Family Emission Limit (FEL)” refers to the exhaust emission levels to which an
+         <li>"Family Emission Limit (FEL)" refers to the exhaust emission levels to which an
          engine family is certified under the averaging, banking, and trading program
          incorporated by reference in title 13, CCR section 1956.8.</li>
-         <li>“Fault memory” means information pertaining to malfunctions stored in the
+         <li>"Fault memory" means information pertaining to malfunctions stored in the
          onboard computer, including fault codes, stored engine conditions, and MIL status.</li>
-         <li>“Federal Test Procedure (FTP) test” refers to an exhaust emission test
+         <li>"Federal Test Procedure (FTP) test" refers to an exhaust emission test
          conducted according to the test procedures incorporated by reference in title 13,
          CCR section 1961(d) that is used to determine compliance with the FTP standard to
          which a vehicle is certified.
          <dl>
          <dt>14.1</dt>
-         <dd>“FTP cycle”. For passenger vehicles, light-duty trucks, and medium-duty
+         <dd>"FTP cycle". For passenger vehicles, light-duty trucks, and medium-duty
          vehicles certified on a chassis dynamometer, FTP cycle refers to the driving
          schedule in Code of Federal Regulations (CFR) 40, Appendix 1, Part 86, section
-         (a) entitled, “EPA Urban Dynamometer Driving Schedule for Light-Duty Vehicles
-         and Light-Duty Trucks.” For medium-duty engines certified on an engine
+         (a) entitled, "EPA Urban Dynamometer Driving Schedule for Light-Duty Vehicles
+         and Light-Duty Trucks." For medium-duty engines certified on an engine
          dynamometer, FTP cycle refers to the engine dynamometer schedule in CFR 40,
-         Appendix 1, Part 86, section (f)(1), entitled, “EPA Engine Dynamometer
-         Schedule for Heavy-Duty Otto-Cycle Engines,” or section (f)(2), entitled, “EPA
-         Engine Dynamometer Schedule for Heavy-Duty Diesel Engines.”</dd>
+         Appendix 1, Part 86, section (f)(1), entitled, "EPA Engine Dynamometer
+         Schedule for Heavy-Duty Otto-Cycle Engines," or section (f)(2), entitled, "EPA
+         Engine Dynamometer Schedule for Heavy-Duty Diesel Engines."</dd>
          </dl>
          <dl>
          <dt>14.2</dt>
-         <dd>“FTP standard” refers to the certification tailpipe exhaust emission full useful
+         <dd>"FTP standard" refers to the certification tailpipe exhaust emission full useful
          life standards and test procedures applicable to the FTP cycle and to the class to
          which the vehicle is certified.</dd>
          </dl>
          <dl>
          <dt>14.3</dt>
-         <dd>“FTP full useful life standard” refers to the FTP standard applicable when the
+         <dd>"FTP full useful life standard" refers to the FTP standard applicable when the
          vehicle reaches the end of its full useful life as defined in the certification
          requirements and test procedures incorporated by reference in title 13, CCR
          section 1961(d).</dd>
          </dl>
          </li>
-         <li>“Fuel trim” refers to feedback adjustments to the base fuel schedule. Short -term
+         <li>"Fuel trim" refers to feedback adjustments to the base fuel schedule. Short -term
          fuel trim refers to dynamic or instantaneous adjustments. Long -term fuel trim refers
          to much more gradual adjustments to the fuel calibration schedule than short-term
          trim adjustments.</li>
-         <li>“Fueled engine operation” is the state where any fuel is introduced into the
+         <li>"Fueled engine operation" is the state where any fuel is introduced into the
          engine for the purpose of combustion.</li>
-         <li>“Functional check” for an output component or system means verification of
+         <li>"Functional check" for an output component or system means verification of
          proper response of the component and system to a computer command.</li>
-         <li>“Gasoline engine” refers to an Otto-cycle engine or an alternate-fueled engine.</li>
-         <li>“Hybrid vehicle” refers to a vehicle (including a plug-in hybrid electric vehicle) that
+         <li>"Gasoline engine" refers to an Otto-cycle engine or an alternate-fueled engine.</li>
+         <li>"Hybrid vehicle" refers to a vehicle (including a plug-in hybrid electric vehicle) that
          can draw propulsion energy from either or both of the following on-vehicle sources
          of stored energy: 1) a consumable fuel and 2) an energy storage device such as a
          battery, capacitor, or flywheel.</li>
-         <li>“Keep-alive memory (KAM),” for the purposes of this regulation, is defined as a
+         <li>"Keep-alive memory (KAM)," for the purposes of this regulation, is defined as a
          type of memory that retains its contents as long as power is provided to the on board control unit. KAM is not erased upon shutting off the engine but may be
          erased if power to the on-board control unit is interrupted (e.g., vehicle battery
          disconnected, fuse to control unit removed). In some cases, portions of KAM may
          be erased with a scan tool command to reset KAM.</li>
-         <li>“Key on, engine off position” refers to a vehicle with the ignition key in the engine
+         <li>"Key on, engine off position" refers to a vehicle with the ignition key in the engine
          run position (not engine crank or accessory position) but with the engine not
          running.</li>
-         <li>“Light-duty truck” is defined in title 13, CCR section 1900 (b).</li>
-         <li>“Low Emission Vehicle I application” refers to a vehicle or engine certified in
+         <li>"Light-duty truck" is defined in title 13, CCR section 1900 (b).</li>
+         <li>"Low Emission Vehicle I application" refers to a vehicle or engine certified in
          California to the exhaust emission standards defined in title 13, CCR sections
          1956.8(g), 1960.1(g)(1), and 1960.1(h)(1) for any of the following vehicle emission
          categories: Transitional Low Emission Vehicle (TLEV), Low Emission Vehicle (LEV),
@@ -672,26 +587,26 @@
          bin) for purposes of determining the malfunction thresholds in sections (e) and (f).
          <dl>
          <dt>29.1</dt>
-         <dd>“MDV SULEV vehicles” refer only to medium-duty Low Emission Vehicle I
+         <dd>"MDV SULEV vehicles" refer only to medium-duty Low Emission Vehicle I
          applications certified to the SULEV vehicle emission category.</dd>
          </dl>
          <dl>
          <dt>29.2</dt>
-         <dd>“TLEV vehicles” refer only to Low Emission Vehicle I applications certified to
+         <dd>"TLEV vehicles" refer only to Low Emission Vehicle I applications certified to
          the TLEV vehicle emission category.</dd>
          </dl>
          <dl>
          <dt>29.3</dt>
-         <dd>“LEV vehicles” refer only to Low Emission Vehicle I applications certified to
+         <dd>"LEV vehicles" refer only to Low Emission Vehicle I applications certified to
          the LEV vehicle emission category.</dd>
          </dl>
          <dl>
          <dt>29.4</dt>
-         <dd>“ULEV vehicles” refer only to Low Emission Vehicle I applications certified to
+         <dd>"ULEV vehicles" refer only to Low Emission Vehicle I applications certified to
          the ULEV vehicle emission category.</dd>
          </dl>
          </li>
-         <li>“Low Emission Vehicle II application” refers to a vehicle or engine certified in
+         <li>"Low Emission Vehicle II application" refers to a vehicle or engine certified in
          California to the exhaust emission standards defined in title 13, CCR section 1961,
          or optionally certified to the exhaust emission standards defined in title 13, CCR
          section 1956.8, for any of the following emission categories: LEV, ULEV, or SULEV.
@@ -705,88 +620,88 @@
          determining the malfunction thresholds in sections (e) and (f).
          <dl>
          <dt>30.1</dt>
-         <dd>“PC/LDT SULEV II vehicles” refer only to passenger car and light-duty truck
+         <dd>"PC/LDT SULEV II vehicles" refer only to passenger car and light-duty truck
          Low Emission Vehicle II applications certified to the SULEV vehicle emission
          category.</dd>
          </dl>
          <dl>
          <dt>30.2</dt>
-         <dd>“MDV SULEV II vehicles” refer only to medium-duty Low Emission Vehicle II
+         <dd>"MDV SULEV II vehicles" refer only to medium-duty Low Emission Vehicle II
          applications certified to the SULEV vehicle emission category.</dd>
          </dl>
          <dl>
          <dt>30.3</dt>
-         <dd>“LEV II vehicles” refer only to Low Emission Vehicle II applications certified to
+         <dd>"LEV II vehicles" refer only to Low Emission Vehicle II applications certified to
          the LEV vehicle emission category.</dd>
          </dl>
          <dl>
          <dt>30.4</dt>
-         <dd>“ULEV II vehicles” refer only to Low Emission Vehicle II applications certified
+         <dd>"ULEV II vehicles" refer only to Low Emission Vehicle II applications certified
          to the ULEV vehicle emission category.</dd>
          </dl>
          </li>
-         <li>“Malfunction” means any deterioration or failure of a component that causes the
+         <li>"Malfunction" means any deterioration or failure of a component that causes the
          performance to be outside of the applicable limits in sections (e) and (f).</li>
-         <li>“Medium -duty vehicle” is defined in title 13, CCR section 1900 (b).</li>
-         <li>“Medium-duty passenger vehicle” or “MDPV” is defined in Title 40, Section
+         <li>"Medium -duty vehicle" is defined in title 13, CCR section 1900 (b).</li>
+         <li>"Medium-duty passenger vehicle" or "MDPV" is defined in Title 40, Section
          86.1803-01, Code of Federal Regulations.</li>
          </li>
-         <li>“Normal production” is the time after the start of production when the manufacturer
+         <li>"Normal production" is the time after the start of production when the manufacturer
          has produced 2% of the projected volume for the test group or calibration,
          whichever is being evaluated in accordance with section (j).</li>
-         <li>“Non-volatile random access memory (NVRAM),” for the purposes of this
+         <li>"Non-volatile random access memory (NVRAM)," for the purposes of this
          regulation, is defined as a type of memory that retains its contents  even when power
          to the on-board control unit is interrupted (e.g., vehicle battery disconnected, fuse to
          control unit removed). NVRAM is typically made non-volatile either by use of a
          back-up battery within the control unit or through the use of an electrically erasable
          and programmable read-only memory (EEPROM) chip.</li>
-         <li>“Not-To-Exceed (NTE) control area” refers to the bounded region of the engine’s
+         <li>"Not-To-Exceed (NTE) control area" refers to the bounded region of the engine’s
          torque and speed map, as defined in 40 CFR 86.1370 -2007, where emissions must
          not exceed a specific emission cap for a given pollutant under the NTE requirement.
-         “Manufacturer-specific NOx NTE carve-out area” refers to regions within the
+         "Manufacturer-specific NOx NTE carve-out area" refers to regions within the
          NTE control area for NOx where the manufacturer has limited NTE testing as
          allowed by 40 CFR 86.1370-2007(b)(7).
-         “Manufacturer-specific PM NTE carve-out area” refers to regions within the
+         "Manufacturer-specific PM NTE carve-out area" refers to regions within the
          NTE control area for PM where the manufacturer has limited NTE testing as
          allowed by 40 CFR 86.1370-2007(b)(7).
-         “NTE deficiency” refers to regions or conditions within the NTE control area
+         "NTE deficiency" refers to regions or conditions within the NTE control area
          for NOx or PM where the manufacturer has received a deficiency as allowed by
          40 CFR 86.007-11(a)(4)(iv).
-         “Normal production” is the time after the start of production when the
+         "Normal production" is the time after the start of production when the
          manufacturer has produced two percent of the projected volume for the test group
          or calibration, whichever is being evaluated in accordance with section (j).</li>
-         <li>“Passenger car” is defined in title 13, CCR section 1900 (b).</li>
-         <li>“Pending fault code” is defined as the diagnostic trouble code stored upon the
+         <li>"Passenger car" is defined in title 13, CCR section 1900 (b).</li>
+         <li>"Pending fault code" is defined as the diagnostic trouble code stored upon the
          initial detection of a malfunction (e.g., t ypically on a single driving cycle) prior to
          illumination of the MIL in accordance with the requirements of section s (e), (f), and
          (g)(4.4).</li>
-         <li>“Percentage of misfire” as used in (e)(3.2) and (f)(3.2) means the percentage of
+         <li>"Percentage of misfire" as used in (e)(3.2) and (f)(3.2) means the percentage of
          misfires out of the total number of firing events for the specified interval.</li>
-         <li>“Permanent fault code” is defined as a confirmed fault code that is currently
+         <li>"Permanent fault code" is defined as a confirmed fault code that is currently
          commanding the MIL on and is stored in NVRAM as specified in sections (d)(2) and
          (g)(4.4).</li>
-         <li>“Plug-in hybrid electric vehicle” refers to a hybrid vehicle that has the capability to
+         <li>"Plug-in hybrid electric vehicle" refers to a hybrid vehicle that has the capability to
          charge a battery from an off-vehicle electric energy source that cannot be connected
          or coupled to the vehicle in any manner while the vehicle is being driven.</li>
-         <li>“Power Take-Off (PTO) unit” refers to an engine driven output provision for the
+         <li>"Power Take-Off (PTO) unit" refers to an engine driven output provision for the
          purposes of powering auxiliary equipment (e.g., a dump-truck bed, aerial bucket, or
          tow-truck winch).</li>
-         <li>“Propulsion system active” is the state where the powertrain (e.g., engine,
+         <li>"Propulsion system active" is the state where the powertrain (e.g., engine,
          electric machine) is enabled by the driver (e.g., after ignition on for conventional
          vehicles, after power button pushed for some hybrid vehicles, after remote start
          activation) such that the vehicle is ready to be used (e.g., vehicle is ready to be
-         driven, ready to be shifted from “park” to “drive”, heating, ventilation, and air
+         driven, ready to be shifted from "park" to "drive", heating, ventilation, and air
          conditioning (HVAC) turned on to condition cabin prior to driving). For purposes of
-         this definition, “the state where the powertrain is enabled” does not include
+         this definition, "the state where the powertrain is enabled" does not include
          activations that are not driver-initiated (e.g., conditions where portions of the vehicle
          system wake up to perform OBD II monitoring or off-board charging).</li>
-         <li>“Rationality fault diagnostic” for an input component means verification of the
+         <li>"Rationality fault diagnostic" for an input component means verification of the
          accuracy of the input signal while in the range of normal operation and when
          compared to all other available information.</li>
-         <li>“Redline engine speed” shall be defined by the manufacturer as either the
+         <li>"Redline engine speed" shall be defined by the manufacturer as either the
          recommended maximum engine speed as normally displayed on instrument panel
          tachometers or the engine speed at which fuel shutoff occurs.</li>
-         <li>“Response rate” for exhaust gas sensors refers to the delay  from when the
+         <li>"Response rate" for exhaust gas sensors refers to the delay  from when the
          sensor is exposed to a different make-up of exhaust gas constituents until it outputs
          a signal reflecting the different make-up of exhaust gas constituents. For example,
          for oxygen sensors, response rate is the delay from when the oxygen sensor is
@@ -797,36 +712,36 @@
          indicates the different A/F ratio. For NOx and PM sensors, response rate is the
          delay from when the sensor is exposed to a different NOx or PM exhaust gas level
          until it indicates the different NOx or PM exhaust gas level.</li>
-         <li>“SC03 emission standards” refers to the certification tailpipe exhaust emission
+         <li>"SC03 emission standards" refers to the certification tailpipe exhaust emission
          standards for the air conditioning (A/C) test of the Supplemental Federal Test
          Procedure Off-Cycle Emission Standards specified in title 13, CCR section 1961(a)
          applicable to the class to which the vehicle is certified.</li>
-         <li>“Secondary air” refers to air introduced into the exhaust system by means of a
+         <li>"Secondary air" refers to air introduced into the exhaust system by means of a
          pump or aspirator valve or other means that is intended to aid in the oxidation of HC
          and CO contained in the exhaust gas stream.</li>
-         <li>“Similar conditions” as used in sections (e)(3), (e)(6), (f)(3), and (f)(4) means
+         <li>"Similar conditions" as used in sections (e)(3), (e)(6), (f)(3), and (f)(4) means
          engine conditions having an engine speed within 375 rpm, load conditions within 20
          percent, and the same warm-up status (i.e., cold or hot) as the engine conditions
          stored pursuant to (e)(3.4.4), (e)(6.4.5), (f)(3.4.2)(C), and (f)(4.4.2)(E). The
          Executive Officer may approve other definitions of similar conditions based on
          comparable timeliness and reliability in detecting similar engine operation.</li>
-         <li>“Small volume manufacturer” is defined in title 13, CCR section 1900(b).
+         <li>"Small volume manufacturer" is defined in title 13, CCR section 1900(b).
          However, for a manufacturer that transitions from a small volume manufacturer to a
          non-small volume manufacturer, the manufacturer is still considered a small volume
          manufacturer for the first three model years that it no longer meets the definition in
          title 13, CCR section 1900(b).</li>
-         <li>“Supplemental Emission Test (SET) cycle” refers to the driving schedule defined
-         as the “supplemental steady state emission test” in 40 CFR 86.1360-2007, as
+         <li>"Supplemental Emission Test (SET) cycle" refers to the driving schedule defined
+         as the "supplemental steady state emission test" in 40 CFR 86.1360-2007, as
          amended July 13, 2005.</li>
-         <li>“SET standard” refers to the certification exhaust emission standards and test
+         <li>"SET standard" refers to the certification exhaust emission standards and test
          procedures applicable to the SET cycle incorporated by reference in title 13, CCR
          sections 1956.8(b) and (d) to which the engine is certified.</li>
-         <li>“Unified cycle” is defined in “Speed Versus Time Data for California’s Unified
-         Driving Cycle”, dated December 12, 1996, incorporated by reference.</li>
-         <li>“US06 cycle” refers to the driving schedule in 40 CFR 86, Appendix 1, section
-         (g), as amended July 13, 2005, entitled, “EPA US06 Driving Schedule for Light-Duty
-         Vehicles and Light-Duty Trucks.”</li>
-         <li>“Warm-up cycle” means a driving cycle with sufficient vehicle operation such that
+         <li>"Unified cycle" is defined in "Speed Versus Time Data for California’s Unified
+         Driving Cycle", dated December 12, 1996, incorporated by reference.</li>
+         <li>"US06 cycle" refers to the driving schedule in 40 CFR 86, Appendix 1, section
+         (g), as amended July 13, 2005, entitled, "EPA US06 Driving Schedule for Light-Duty
+         Vehicles and Light-Duty Trucks."</li>
+         <li>"Warm-up cycle" means a driving cycle with sufficient vehicle operation such that
          the coolant temperature has risen by at least 40 degrees Fahrenheit from engine
          starting and reaches a minimum temperature of at least 160 degrees Fahrenheit
          (140 degrees Fahrenheit for applications with diesel engines).  Alternatively,
@@ -840,4 +755,3 @@
 </div>
 </body>
 </html>
-

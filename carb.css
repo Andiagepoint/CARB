@@ -36,6 +36,7 @@
         padding: 0.2em 0;
     }
     #main {
+        line-height: 180%;
         margin: 0;
         padding:  0%;
         background: #fc9
@@ -53,4 +54,3 @@
     #footer {
         clear: both;
     }
-
