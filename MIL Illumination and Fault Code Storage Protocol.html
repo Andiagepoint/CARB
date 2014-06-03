@@ -162,7 +162,40 @@
   </ul>
 </div>
          <div id="margin">
-
+<dl>
+<dt>2.2.1</dt>
+<dd>Bei Auftreten eines Fehlercodes, soll das OBD-System einen vor&uuml;bergehenden Fehlercode, der die vermutete Fehlerquelle aufzeigt, innerhalb von 10 Sek. anzeigen.</dd>
+</dl>
+<dl>
+<dt>2.2.2</dt>
+<dd>Wenn bereits ein vor&uuml;bergehender Fehlercode vorliegt und erneut dieser Fehler im n&auml;chsten Fahrzyklus auftritt, so soll innerhalb von 10 sek. ein dauerhafter Fehlercode gespeichert werden oder die MIL st&auml;ndig leuchten. Wenn im n&auml;chsten Fahrzyklus dieser Fehler nicht mehr auftritt (z.B. der Fehler wird zu keiner Zeit im Fahrzyklus erkannt), so soll der gem. Abschnitt (d)(2.2.1) gesetzte Fehler am Ende des Fahrzyklus gel&ouml;scht werden.</dd>
+</dl>
+<dl>
+<dt>2.2.3</dt>
+<dd>Das OBD-System soll die MIL anzeigen und den Fehlercode innerhalb von 10 Sek. speichern um den Fahrer dar&uuml;ber zu informieren, dass der Antrieb fehlerhaft ist und zu Emissionen f&uuml;hrt oder die Betriebsbereitschaft des OBD II Systems oder bei einem Fehler des OBD Computers selbst das OBD-System eingeschr&auml;nkt ist.
+<ol type=A>
+<li>Wenn der Fehlermodus oder Notbetrieb heilbar ist (z.B. die Diagnosefunktion, die den Fehler erkannt hat, bei einem neuen Fahrzyklus den Fehler erneut erkennen k&ouml;nnte), kann das OBD II System anstatt die MIL innerhalb von 10 Sek. im ersten Fahrzyklus zu erleuchten, die Anzeige solange verz&ouml;gern bis der Fehler erneut bis zum Ende des n&auml;chsten Fahrzyklus aufgetreten ist.</li>
+<li>Die MIL Anzeige und Fehlercode-Speicherung ist nicht notwendig f&uuml;r Motor&uuml;berhitzungsschutzstrategien, die nur dann ausgef&uuml;hrt werden, wenn die Temperaturanzeige eine Temperatur&uuml;berschreitung anzeigt oder problematische Betriebszust&auml;nde verifiziert wurden.</li>
+</ol>
+</dd>
+</dl>
+<dl>
+<dt>2.2.4</dt>
+<dd>F&uuml;r alle Fahrzeuge ab dem Modelljahr 2010 soll die MIL angehen/aufleuchten, wenn die Instrumententafel von anderen emissionkritischen Steuerger&auml;ten die Anforderung erh&auml;lt die MIL zu aktivieren und dabei ein Fehler derart auftritt, dass keine weiteren Aktivierungsbefehle mehr empfangen werden k&ouml;nnen (z.B. Verlust der Kommunikation).</dd>
+</dl>
+<dl>
+<dt>2.2.5</dt>
+<dd>Bei 50% der Modell im Modelljahr 2010, 75% der Modelle im Modelljahr 2011 und 100% der Modelle im Modelljahr 2012 (einschlie&szlig;lich MDV aus dem Modelljahr 2012 mit zugelassenen Motoren aus dem Modelljahr 2011) soll das OBD System noch vor Ende des Z&uuml;ndkreislaufs best&auml;tigte Fehlercodes, die aktuell die MIL aufleuchten lassen, als dauerhafte Fehlercodes gem. Abschnitt (g)(4.4.6) im NVRAM speichern.</dd>
+</dl>
+<dl>
+<dt>2.2.6</dt>
+<dd>Der Hersteller kann beim Sachbearbeiter alternative MIL Anzeigen und Fehlercodespeicherungsprotokolle, wie sie hier in den Vorgaben definiert sind, beantragen. Die Zulassung h&auml;ngt davon ab, ob der Hersteller Daten oder technische Auswertungen dar&uuml;ber liefern kann, dass die Alternative die Systemperformance und Fehlererkennung gleich schnell und effektiv bewerkstellingen kann. Mit Ausnahme der Fehler im Verdunstungssystem aus Abschnitt (e), sind Strategien die im Schnitt mehr als 6 Fahrzyklen ben&ouml;tigen um die MIL anzuzeigen nicht erlaubt.</dd>
+</dl>
+<dl>
+<dt>2.2.7</dt>
+<dd>
+Der Hersteller soll Rahmendaten speichern und l&ouml;schen, die beim Aufleuchten eines Fehlers vorliegen. Der Hersteller soll die Rahmendaten speichern und l&ouml;schen, genauso wie die vor&uuml;bergehenden oder dauerhaften Fehlercodes zu speichern oder zu l&ouml;schen sind.</dd>
+</dl>
          </div>
          <div id="content">
 <dl>
@@ -241,7 +274,7 @@ average more than six driving cycles for MIL illumination may not be
 accepted.</dd>
 </dl>
 <dl>
-<dt>2.2.6</dt>
+<dt>2.2.7</dt>
 <dd>
 A manufacturer shall store and erase “freeze frame” conditions (as
 defined in section (g)(4.3)) present at the time a malfunction is detected.
